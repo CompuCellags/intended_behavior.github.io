@@ -1,0 +1,55 @@
+/* ╔════════════════════════════════════════════════════════╗
+   ║  Módulo: index.css                                     ║
+   ║  Propósito: Entrada ética con arte ASCII interactivo   ║
+   ║  Versión: v1.0 — 2025-09-15                            ║
+   ╚════════════════════════════════════════════════════════╝ */
+
+body {
+  background: url('wallpaper.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'JetBrains Mono', monospace;
+  color: #3fa3a1;
+  margin: 0;
+  padding: 0;
+}
+
+.retro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.ascii-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  position: relative;
+}
+
+#ascii-banner {
+  background-color: #121212;
+  color: #3fa3a1;
+  padding: 20px;
+  border: 2px solid #3fa3a1;
+  white-space: pre;
+  box-shadow: 0 0 10px #3fa3a1;
+  margin-bottom: 30px;
+}
+
+.ascii-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+}
+
+.ascii-link {
+  position: absolute;
+  width: 300px;
+  height: 24px;
+  cursor: pointer;
+  z-index: 10;
+  background-color: transparent;
+  border: none;
+}
