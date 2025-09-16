@@ -50,6 +50,8 @@ python3 -m http.server 8000
 
 ###Si vas a usar GitHub Pages:
 
+https://CompuCellags.github.io/intended_behavior.github.io/
+
 
 ```markdown
 ## 🌐 Acceso vía GitHub Pages
