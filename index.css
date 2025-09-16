@@ -36,12 +36,19 @@ body {
   margin-bottom: 30px;
 }
 
+/* ╔════════════════════════════════════════════════════════════════════════════╗
+   ║  Privilegios activados por trazado visual — v1.0                          ║
+   ║  Cada enlace invisible corresponde a un módulo ético segmentado por uso  ║
+   ║  Coordenadas alineadas por línea y columna sobre arte ASCII              ║
+   ╚════════════════════════════════════════════════════════════════════════════╝ */
+
 .ascii-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 0;
+  pointer-events: none;
 }
 
 .ascii-link {
@@ -51,5 +58,8 @@ body {
   cursor: pointer;
   z-index: 10;
   background-color: transparent;
+  pointer-events: auto;
+}
+
   border: none;
 }
