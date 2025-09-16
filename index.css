@@ -27,13 +27,13 @@ body {
 }
 
 #ascii-banner {
-  background-color: #121212;
-  color: #3fa3a1;
-  padding: 20px;
-  border: 2px solid #3fa3a1;
-  white-space: pre;
-  box-shadow: 0 0 10px #3fa3a1;
-  margin-bottom: 30px;
+  background-color: rgba(18, 18, 18, 0.6); /* semitransparente */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+#ascii-banner {
+  box-shadow: 0 0 20px rgba(63, 163, 161, 0.6);
 }
 
 /* ╔════════════════════════════════════════════════════════════════════════════╗
