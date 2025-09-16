@@ -1,33 +1,24 @@
-/* ╔════════════════════════════════════════════════════════╗
-   ║  Módulo: index.js                                      ║
-   ║  Propósito: Cargar arte ASCII y activar privilegios    ║
-   ║  Versión: v1.0 — 2025-09-15                            ║
-   ╚════════════════════════════════════════════════════════╝ */
+/* ╔════════════════════════════════════════════════════════════════════╗
+   ║  Módulo: index.js                                                 ║
+   ║  Propósito: Cargar banner ASCII y diagnosticar entorno operativo  ║
+   ║  Versión: v1.0 — 2025-09-15                                       ║
+   ╚════════════════════════════════════════════════════════════════════╝ */
 
-const banner = document.getElementById('ascii-banner');
-
-if (banner) {
+window.addEventListener('DOMContentLoaded', () => {
   fetch('banner.txt')
-    .then(res => {
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      return res.text();
-    })
+    .then(response => response.text())
     .then(data => {
-      banner.textContent = data;
+      document.getElementById('ascii-banner').textContent = data;
       console.log('🖼️ Banner cargado correctamente.');
+
+      // Diagnóstico ético por entorno
+      if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
+        console.log('📂 Per angusta ad augusta — entorno local reproducible.');
+      } else {
+        console.log('🌐 Modo remoto — privilegios limitados.');
+      }
     })
-    .catch(err => {
-      console.warn('⚠️ Error al cargar el banner:', err.message);
+    .catch(error => {
+      console.error('⚠️ Error al cargar el banner:', error);
     });
-} else {
-  console.warn('⚠️ Contenedor #ascii-banner no encontrado.');
-}
-
-// Diagnóstico ético por entorno
-console.log('🔐 Entrada ética activada — privilegios segmentados por propósito.');
-
-if (location.protocol === 'file:') {
-  console.log('📂 Per angusta ad augusta — entorno local reproducible.');
-} else {
-  console.warn('🌐 Modo remoto — privilegios limitados.');
-}
+});
