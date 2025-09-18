@@ -52,6 +52,7 @@ http://localhost:8000/index.html
 git clone https://github.com/tu-usuario/intended_behavior.git
 cd intended_behavior/WEB-UI
 python3 -m http.server 8000
+```
 
 Abre tu navegador en: http://localhost:8000/index.html
 
@@ -66,6 +67,6 @@ Abre tu navegador en: http://localhost:8000/index.html
 ║         Software developer - Ascii Art - Machine Learning            ║
 ╚══════════════════════════════════════════════════════════════════════╝
 
-
 ## 📁 Estructura del proyecto
 
+   
