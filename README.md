@@ -42,7 +42,7 @@ WEB-UI/ ├── index.html # Entrada principal con escudo ASCII ├── inde
 
 ##Acceso via Github Pages: 
 
-http://localhost:8000/index.html
+https://CompuCellags.github.io/intended_behavior.github.io/
 
 ---
 
