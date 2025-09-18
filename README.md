@@ -36,7 +36,20 @@ Este módulo forma parte del sistema `intended_behavior`, una arquitectura étic
 
 ##Estructura del proyecto
 
-WEB-UI/ ├── index.html # Entrada principal con escudo ASCII ├── index.css # Estilos trazables por línea y columna ├── index.js # Activación de privilegios y trazabilidad ├── technical.html # Módulo técnico independiente ├── technical.css ├── technical.js ├── research.html # Módulo de investigación independiente ├── research.css ├── research.js ├── contact.html # Módulo de contacto ético ├── explicacion.html # Módulo de explicación institucional ├── assets/ │ ├── banner.txt # Arte ASCII reproducible │ ├── pixel-bg.png # Fondo visual estilo circuito │ ├── icon-access.png # Ícono para acceso técnico │ └── icon-audit.png # Ícono para trazabilidad ética
+WEB-UI/
+├── index.html # Entrada principal con escudo ASCII 
+├── index.css # Estilos trazables por línea y columna 
+├── index.js # Activación de privilegios y trazabilidad 
+├── technical.html # Módulo técnico independiente 
+├── technical.css ├── technical.js 
+├── research.html # Módulo de investigación independiente 
+├── research.css ├── research.js 
+├── contact.html # Módulo de contacto ético 
+├── explicacion.html # Módulo de explicación institucional 
+├── assets/ │ ├── banner.txt # Arte ASCII reproducible
+│ ├── pixel-bg.png # Fondo visual estilo circuito 
+│ ├── icon-access.png # Ícono para acceso técnico
+│ └── icon-audit.png # Ícono para trazabilidad ética
 
 ---
 
