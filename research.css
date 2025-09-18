@@ -1,21 +1,49 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Technical Portfolio — intended_behavior</title>
-  <link rel="stylesheet" href="portfolio.css">
-</head>
-<body>
-  <section id="technical-portfolio">
-    <h1>Technical Portfolio</h1>
-    <p>Artefactos técnicos que sustentan la infraestructura ética de intended_behavior.</p>
-    <ul>
-      <li><strong>Banner ASCII:</strong> <a href="banner.txt">Ver banner.txt</a></li>
-      <li><strong>index.html:</strong> Entrada principal del sitio modular</li>
-      <li><strong>index.css:</strong> Estilos trazables por línea y columna</li>
-      <li><strong>index.js:</strong> Mapeo interactivo de privilegios</li>
-      <li><strong>Licencias:</strong> GPLv3 para código, CC BY-NC-SA 4.0 para narrativa</li>
-    </ul>
-  </section>
-</body>
-</html>
+/* === research.css === */
+/* Tema sepia narrativo para hallazgos éticos */
+
+body {
+  background-color: #fdf6e3;
+  font-family: 'Georgia', serif;
+  color: #3b2f2f;
+}
+
+section {
+  background-color: #fffaf0;
+  border-left: 6px solid #a67c52;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 900px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  border-bottom: 2px solid #d2b48c;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1em;
+  color: #5a4a42;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+a {
+  color: #8b4513;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
