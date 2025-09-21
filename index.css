@@ -15,21 +15,25 @@ body {
 
 .retro-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding-top: 40px;
+  min-height: 100vh;
 }
 
 .ascii-wrapper {
-  width: 100%;
-  overflow-x: auto;
   position: relative;
+  width: calc(180 * 8px);     /* 180 columnas × 8px por carácter */
+  height: calc(33 * 20px);    /* 33 líneas × 20px de altura */
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 #ascii-banner {
-  background-color: rgba(18, 18, 18, 0.6); /* semitransparente */
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  font-family: monospace;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 #ascii-banner {
