@@ -22,8 +22,8 @@ body {
 
 .ascii-wrapper {
   position: relative;
-  width: calc(200 * 8px);     /* 200 columnas × 8px por carácter */
-  height: calc(33 * 20px);    /* 33 líneas × 20px de altura */
+  width: calc(180 * 8px);     /* Ajustado a c180 */
+  height: calc(33 * 20px);    /* Ajustado a l33 */
   overflow: hidden;
   margin: 0 auto;
 }
@@ -34,9 +34,7 @@ body {
   line-height: 20px;
   margin: 0;
   padding: 0;
-}
-
-#ascii-banner {
+  white-space: pre;
   box-shadow: 0 0 20px rgba(63, 163, 161, 0.6);
 }
 
@@ -50,8 +48,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 0;
+  width: calc(180 * 8px);     /* Alineado con el arte */
+  height: calc(33 * 20px);    /* Alineado con el arte */
   pointer-events: none;
 }
 
@@ -63,7 +61,5 @@ body {
   z-index: 10;
   background-color: transparent;
   pointer-events: auto;
-}
-
   border: none;
 }
