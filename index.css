@@ -22,9 +22,9 @@ body {
 
 .ascii-wrapper {
   position: relative;
-  width: calc(180 * 8px);     /* Ajustado a c180 */
-  height: calc(33 * 20px);    /* Ajustado a l33 */
-  overflow: hidden;
+  width: auto; /* Se ajustará por JS */
+  height: auto; /* Se ajustará por JS */
+  overflow: visible;
   margin: 0 auto;
 }
 
