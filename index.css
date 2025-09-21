@@ -22,7 +22,7 @@ body {
 
 .ascii-wrapper {
   position: relative;
-  width: calc(200 * 8px);     /* 180 columnas × 8px por carácter */
+  width: calc(200 * 8px);     /* 200 columnas × 8px por carácter */
   height: calc(33 * 20px);    /* 33 líneas × 20px de altura */
   overflow: hidden;
   margin: 0 auto;
