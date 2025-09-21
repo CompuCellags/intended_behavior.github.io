@@ -10,11 +10,11 @@ window.addEventListener('DOMContentLoaded', () => {
     .then(data => {
       const asciiBanner = document.getElementById('ascii-banner');
       asciiBanner.textContent = data;
-      console.log('🖼️ Banner cargado correctamente.');
 
-      // Ajuste dinámico del contenedor según arte cargado
-      const lineCount = data.split('\n').length;
-      const columnCount = Math.max(...data.split('\n').map(line => line.length));
+      // Recalcular dimensiones reales
+      const lines = data.split('\n');
+      const lineCount = lines.length;
+      const columnCount = Math.max(...lines.map(line => line.length));
 
       const wrapper = document.querySelector('.ascii-wrapper');
       wrapper.style.height = `${lineCount * 20}px`;
@@ -24,12 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
       overlay.style.height = `${lineCount * 20}px`;
       overlay.style.width = `${columnCount * 8}px`;
 
-      // Diagnóstico ético por entorno
-      if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
-        console.log('📂 Per angusta ad augusta — entorno local reproducible.');
-      } else {
-        console.log('🌐 Modo remoto — privilegios limitados.');
-      }
+      console.log(`🧮 Arte ajustado: ${lineCount} líneas × ${columnCount} columnas`);
     })
     .catch(error => {
       console.error('⚠️ Error al cargar el banner:', error);
