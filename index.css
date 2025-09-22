@@ -1,7 +1,6 @@
 /* ╔════════════════════════════════════════════════════════════════════════════╗
    ║  Módulo: index.css — Entrada ética con arte ASCII interactivo            ║
-   ║  Versión: v2.0 — 2025-09-22 — Compatibilidad universal                    ║
-   ║  Correcciones: Unidades relativas, trazabilidad visual, DPI-resiliente   ║
+   ║  Versión: v2.1 — 2025-09-22 — Botones invisibles con trazabilidad ética  ║
    ╚════════════════════════════════════════════════════════════════════════════╝ */
 
 body {
@@ -30,42 +29,66 @@ body {
 
 #ascii-banner {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 1em;           /* Base para em */
-  line-height: 1.25em;      /* Equivale a 20px si 1em = 16px */
+  font-size: 1em;
+  line-height: 1.25em;
   white-space: pre;
   margin: 0;
   padding: 0;
   box-shadow: 0 0 20px rgba(63, 163, 161, 0.6);
 }
 
-/* ╔════════════════════════════════════════════════════════════════════════════╗
-   ║  Overlay ético invisible con trazado relativo                             ║
-   ╚════════════════════════════════════════════════════════════════════════════╝ */
-
 .ascii-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: calc(180 * 0.5em);     /* 180 columnas × ancho real */
-  height: calc(33 * 1.25em);    /* 33 líneas × altura real */
+  width: calc(180 * 0.5em);
+  height: calc(33 * 1.25em);
   pointer-events: none;
 }
 
 /* ╔════════════════════════════════════════════════════════════════════════════╗
-   ║  Botones invisibles con coordenadas relativas                             ║
+   ║  Botones invisibles alineados por línea y columna                         ║
    ╚════════════════════════════════════════════════════════════════════════════╝ */
 
 .ascii-link {
   position: absolute;
+  width: calc(22 * 0.5em);  /* 22 caracteres de ancho */
+  height: 1.25em;
   cursor: pointer;
   z-index: 10;
   background-color: transparent;
   pointer-events: auto;
   border: none;
-
-  /* Tamaño relativo */
-  width: calc(22 * 0.5em);   /* 22 caracteres de ancho */
-  height: 1.25em;            /* 1 línea de alto */
 }
 
-/* 🧪 Activar trazabilidad visual
+/* TECHNICAL PORTFOLIO */
+.tech-1 { top: calc(2 * 1.25em); left: calc(151 * 0.5em); }
+.tech-2 { top: calc(3 * 1.25em); left: calc(151 * 0.5em); }
+.tech-3 { top: calc(4 * 1.25em); left: calc(151 * 0.5em); }
+
+/* RESEARCH PORTFOLIO */
+.research-1 { top: calc(6 * 1.25em); left: calc(151 * 0.5em); }
+.research-2 { top: calc(7 * 1.25em); left: calc(151 * 0.5em); }
+.research-3 { top: calc(8 * 1.25em); left: calc(151 * 0.5em); }
+
+/* SKILLS & METHODOLOGY */
+.skills-1 { top: calc(10 * 1.25em); left: calc(151 * 0.5em); }
+.skills-2 { top: calc(11 * 1.25em); left: calc(151 * 0.5em); }
+.skills-3 { top: calc(12 * 1.25em); left: calc(151 * 0.5em); }
+
+/* ASCII ART */
+.ascii-1 { top: calc(14 * 1.25em); left: calc(151 * 0.5em); }
+.ascii-2 { top: calc(15 * 1.25em); left: calc(151 * 0.5em); }
+.ascii-3 { top: calc(16 * 1.25em); left: calc(151 * 0.5em); }
+
+/* CONTACT */
+.contact-1 { top: calc(18 * 1.25em); left: calc(151 * 0.5em); }
+.contact-2 { top: calc(19 * 1.25em); left: calc(151 * 0.5em); }
+.contact-3 { top: calc(20 * 1.25em); left: calc(151 * 0.5em); }
+
+/* 🧪 Activar trazabilidad visual temporal */
+.ascii-link.debug {
+  border: 1px dashed lime;
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
