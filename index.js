@@ -20,7 +20,6 @@
           // Opcional: ajustar el ancho también dinámicamente
           element.style.width = `${buttonWidthChars * charWidth}px`;
           element.style.height = `${lineHeight}px`;
-        }
       };
 
       // Posicionar todos los botones
