@@ -1,8 +1,8 @@
-/* ╔════════════════════════════════════════════════════════╗
-   ║  Módulo: index.css                                     ║
-   ║  Propósito: Entrada ética con arte ASCII interactivo   ║
-   ║  Versión: v1.0 — 2025-09-15                            ║
-   ╚════════════════════════════════════════════════════════╝ */
+/* ╔════════════════════════════════════════════════════════════════════════════╗
+   ║  Módulo: index.css — Entrada ética con arte ASCII interactivo            ║
+   ║  Versión: v2.0 — 2025-09-22 — Compatibilidad universal                    ║
+   ║  Correcciones: Unidades relativas, trazabilidad visual, DPI-resiliente   ║
+   ╚════════════════════════════════════════════════════════════════════════════╝ */
 
 body {
   background: url('wallpaper.jpg') no-repeat center center fixed;
@@ -22,44 +22,50 @@ body {
 
 .ascii-wrapper {
   position: relative;
-  width: auto; /* Se ajustará por JS */
-  height: auto; /* Se ajustará por JS */
+  width: auto;
+  height: auto;
   overflow: visible;
   margin: 0 auto;
 }
 
 #ascii-banner {
-  font-family: monospace;
-  font-size: 16px;
-  line-height: 20px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1em;           /* Base para em */
+  line-height: 1.25em;      /* Equivale a 20px si 1em = 16px */
+  white-space: pre;
   margin: 0;
   padding: 0;
-  white-space: pre;
   box-shadow: 0 0 20px rgba(63, 163, 161, 0.6);
 }
 
 /* ╔════════════════════════════════════════════════════════════════════════════╗
-   ║  Privilegios activados por trazado visual — v1.0                          ║
-   ║  Cada enlace invisible corresponde a un módulo ético segmentado por uso  ║
-   ║  Coordenadas alineadas por línea y columna sobre arte ASCII              ║
+   ║  Overlay ético invisible con trazado relativo                             ║
    ╚════════════════════════════════════════════════════════════════════════════╝ */
 
 .ascii-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: calc(180 * 8px);     /* Alineado con el arte */
-  height: calc(33 * 20px);    /* Alineado con el arte */
+  width: calc(180 * 0.5em);     /* 180 columnas × ancho real */
+  height: calc(33 * 1.25em);    /* 33 líneas × altura real */
   pointer-events: none;
 }
 
+/* ╔════════════════════════════════════════════════════════════════════════════╗
+   ║  Botones invisibles con coordenadas relativas                             ║
+   ╚════════════════════════════════════════════════════════════════════════════╝ */
+
 .ascii-link {
   position: absolute;
-  width: 300px;
-  height: 24px;
   cursor: pointer;
   z-index: 10;
   background-color: transparent;
   pointer-events: auto;
   border: none;
+
+  /* Tamaño relativo */
+  width: calc(22 * 0.5em);   /* 22 caracteres de ancho */
+  height: 1.25em;            /* 1 línea de alto */
 }
+
+/* 🧪 Activar trazabilidad visual
