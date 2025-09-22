@@ -1,68 +1,58 @@
-/* ╔════════════════════════════════════════════════════════════════════════════╗
-   ║  Módulo: index.js                                                         ║
-   ║  Propósito: Cargar arte ASCII y calibrar overlay ético invisible          ║
-   ║  Versión: v2.0 — 2025-09-22                                               ║
-   ║  Correcciones: Medición real de fuente, trazabilidad visual, validación  ║
-   ╚════════════════════════════════════════════════════════════════════════════╝ */
-
-window.addEventListener('DOMContentLoaded', () => {
-  const asciiBanner = document.getElementById('ascii-banner');
-  const wrapper = document.querySelector('.ascii-wrapper');
-  const overlay = document.querySelector('.ascii-overlay');
-
-  // 🧪 Medición real del ancho de carácter
-  function getCharWidth() {
-    const span = document.createElement('span');
-    span.textContent = 'M';
-    span.style.fontFamily = 'JetBrains Mono, monospace';
-    span.style.fontSize = '16px';
-    span.style.visibility = 'hidden';
-    document.body.appendChild(span);
-    const width = span.getBoundingClientRect().width;
-    document.body.removeChild(span);
-    return width;
-  }
-
-  // 🧪 Medición real de altura de línea
-  function getLineHeight() {
-    const span = document.createElement('span');
-    span.textContent = 'M';
-    span.style.fontFamily = 'JetBrains Mono, monospace';
-    span.style.fontSize = '16px';
-    span.style.lineHeight = 'normal';
-    span.style.visibility = 'hidden';
-    document.body.appendChild(span);
-    const height = span.getBoundingClientRect().height;
-    document.body.removeChild(span);
-    return height;
-  }
-
-  // 🧠 Cargar arte ASCII y ajustar dimensiones
-  fetch('banner.txt')
-    .then(response => response.text())
-    .then(data => {
-      asciiBanner.textContent = data;
-
-      const lines = data.split('\n');
-      const lineCount = lines.length;
-      const columnCount = Math.max(...lines.map(line => line.length));
-
-      const charWidth = getCharWidth();
-      const lineHeight = getLineHeight();
-
-      const totalWidth = columnCount * charWidth;
-      const totalHeight = lineCount * lineHeight;
-
-      wrapper.style.width = `${totalWidth}px`;
-      wrapper.style.height = `${totalHeight}px`;
-      overlay.style.width = `${totalWidth}px`;
+// ... (tu código existente) ...
       overlay.style.height = `${totalHeight}px`;
 
       console.log(`✅ Arte calibrado: ${lineCount} líneas × ${columnCount} columnas`);
       console.log(`📐 Dimensiones reales: ${totalWidth}px × ${totalHeight}px`);
+
+// --- ╔═════════════════════════════════════════════╗ ---
+// --- ║  NUEVO CÓDIGO PARA POSICIONAR LOS BOTONES ║ ---
+// --- ╚═════════════════════════════════════════════╝ ---
+      
+      const columnStart = 151; // La columna donde empiezan los botones
+      const buttonWidthChars = 22; // El ancho de los botones en caracteres
+
+      // Función para posicionar un botón
+      const positionLink = (selector, topRow, leftCol) => {
+        const element = document.querySelector(selector);
+        if (element) {
+          element.style.top = `${topRow * lineHeight}px`;
+          element.style.left = `${leftCol * charWidth}px`;
+          // Opcional: ajustar el ancho también dinámicamente
+          element.style.width = `${buttonWidthChars * charWidth}px`;
+          element.style.height = `${lineHeight}px`;
+        }
+      };
+
+      // Posicionar todos los botones
+      // TECHNICAL PORTFOLIO
+      positionLink('.tech-1', 2, columnStart);
+      positionLink('.tech-2', 3, columnStart);
+      positionLink('.tech-3', 4, columnStart);
+
+      // RESEARCH PORTFOLIO
+      positionLink('.research-1', 6, columnStart);
+      positionLink('.research-2', 7, columnStart);
+      positionLink('.research-3', 8, columnStart);
+
+      // SKILLS & METHODOLOGY
+      positionLink('.skills-1', 10, columnStart);
+      positionLink('.skills-2', 11, columnStart);
+      positionLink('.skills-3', 12, columnStart);
+      
+      // ASCII ART
+      positionLink('.ascii-1', 14, columnStart);
+      positionLink('.ascii-2', 15, columnStart);
+      positionLink('.ascii-3', 16, columnStart);
+
+      // CONTACT
+      positionLink('.contact-1', 18, columnStart);
+      positionLink('.contact-2', 19, columnStart);
+      positionLink('.contact-3', 20, columnStart);
+
+      console.log('✅ Botones invisibles posicionados dinámicamente.');
+
     })
     .catch(error => {
       console.error('⚠️ Error al cargar el banner:', error);
     });
 });
-
