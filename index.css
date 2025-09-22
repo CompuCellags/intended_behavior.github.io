@@ -52,45 +52,12 @@ body {
 
 .ascii-link {
   position: absolute;
-  width: calc(22 * 0.5em);  /* 22 caracteres de ancho */
-  height: 1.25em;
   cursor: pointer;
   z-index: 10;
   background-color: transparent;
   pointer-events: auto;
   border: none;
 }
-
-/* --- VALOR DE AJUSTE --- 
-   He cambiado el multiplicador de 'left' de 0.5em a 0.485em.
-   Si aún no está perfecto, solo necesitas ajustar este número en todas las 
-   líneas de abajo hasta que la alineación sea correcta.
-*/
-
-/* TECHNICAL PORTFOLIO */
-.tech-1 { top: calc(2 * 1.25em); left: calc(151 * 0.485em); }
-.tech-2 { top: calc(3 * 1.25em); left: calc(151 * 0.485em); }
-.tech-3 { top: calc(4 * 1.25em); left: calc(151 * 0.485em); }
-
-/* RESEARCH PORTFOLIO */
-.research-1 { top: calc(6 * 1.25em); left: calc(151 * 0.485em); }
-.research-2 { top: calc(7 * 1.25em); left: calc(151 * 0.485em); }
-.research-3 { top: calc(8 * 1.25em); left: calc(151 * 0.485em); }
-
-/* SKILLS & METHODOLOGY */
-.skills-1 { top: calc(10 * 1.25em); left: calc(151 * 0.485em); }
-.skills-2 { top: calc(11 * 1.25em); left: calc(151 * 0.485em); }
-.skills-3 { top: calc(12 * 1.25em); left: calc(151 * 0.485em); }
-
-/* ASCII ART */
-.ascii-1 { top: calc(14 * 1.25em); left: calc(151 * 0.485em); }
-.ascii-2 { top: calc(15 * 1.25em); left: calc(151 * 0.485em); }
-.ascii-3 { top: calc(16 * 1.25em); left: calc(151 * 0.485em); }
-
-/* CONTACT */
-.contact-1 { top: calc(18 * 1.25em); left: calc(151 * 0.485em); }
-.contact-2 { top: calc(19 * 1.25em); left: calc(151 * 0.485em); }
-.contact-3 { top: calc(20 * 1.25em); left: calc(151 * 0.485em); }
 
 /* 🧪 Activar trazabilidad visual temporal */
 .ascii-link.debug {
