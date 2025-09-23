@@ -1,6 +1,6 @@
 /* ╔════════════════════════════════════════════════════════════════════════════╗
    ║  Módulo: index.css — Entrada ética con arte ASCII interactivo           ║
-   ║  Versión: v2.2 — 2025-09-22 — Calibración de posicionamiento de botones    ║
+   ║  Versión: v3.0 — 2025-09-22 — Lógica de posicionamiento centralizada en JS ║
    ╚════════════════════════════════════════════════════════════════════════════╝ */
 
 body {
@@ -29,8 +29,8 @@ body {
 
 #ascii-banner {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 1em;
-  line-height: 1.25em;
+  font-size: 16px; /* Usar un valor en px para mediciones consistentes */
+  line-height: normal; /* Permitir que el JS mida la altura real */
   white-space: pre;
   margin: 0;
   padding: 0;
@@ -41,15 +41,10 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: calc(180 * 0.5em);
-  height: calc(33 * 1.25em);
   pointer-events: none;
 }
 
-/* ╔════════════════════════════════════════════════════════════════════════════╗
-   ║  Botones invisibles alineados por línea y columna                       ║
-   ╚════════════════════════════════════════════════════════════════════════════╝ */
-
+/* La lógica de posicionamiento (top, left) ahora está en index.js */
 .ascii-link {
   position: absolute;
   cursor: pointer;
