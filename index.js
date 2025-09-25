@@ -1,23 +1,17 @@
 /* ╔════════════════════════════════════════════════════════════════════════════╗
    ║  Módulo: index.js                                                          ║
-   ║  Propósito: Cargar arte ASCII y calibrar dinámicamente el overlay          ║
-   ║  Versión: v3.0 — 2025-09-22 — Posicionamiento dinámico de botones          ║
+   ║  Versión: v4.0 — 2025-09-24 — Método de medición robusto y definitivo      ║
    ╚════════════════════════════════════════════════════════════════════════════╝ */
 
 window.addEventListener('DOMContentLoaded', () => {
   const asciiBanner = document.getElementById('ascii-banner');
-  const wrapper = document.querySelector('.ascii-wrapper');
-  const overlay = document.querySelector('.ascii-overlay');
 
-  // Asegurarse de que el banner es visible para medirlo correctamente
-  asciiBanner.style.visibility = 'hidden';
-
-  // Medición real del ancho de carácter
-  function getCharWidth() {
+  // Función para medir el ancho real de un carácter
+  function getCharWidth(element) {
     const span = document.createElement('span');
     span.textContent = 'M'; // Carácter de referencia
-    span.style.fontFamily = getComputedStyle(asciiBanner).fontFamily;
-    span.style.fontSize = getComputedStyle(asciiBanner).fontSize;
+    span.style.fontFamily = getComputedStyle(element).fontFamily;
+    span.style.fontSize = getComputedStyle(element).fontSize;
     span.style.visibility = 'hidden';
     span.style.position = 'absolute';
     document.body.appendChild(span);
@@ -26,87 +20,61 @@ window.addEventListener('DOMContentLoaded', () => {
     return width;
   }
 
-  // Medición real de altura de línea
-  function getLineHeight() {
-    // Para 'white-space: pre', la altura de línea es simplemente la altura del contenedor
-    // del texto dividida por el número de líneas.
-    const lines = asciiBanner.textContent.split('\n');
-    const lineCount = lines.length > 1 ? lines.length : 1;
-    const bannerHeight = asciiBanner.getBoundingClientRect().height;
-    return bannerHeight / lineCount;
-  }
-
-  // Cargar arte ASCII y ajustar dimensiones
+  // Cargar arte ASCII y posicionar botones
   fetch('banner.txt')
     .then(response => response.text())
     .then(data => {
       asciiBanner.textContent = data;
-      asciiBanner.style.visibility = 'visible'; // Hacer visible después de cargar
 
-      const lines = data.split('\n');
-      const lineCount = lines.length;
-      const columnCount = Math.max(...lines.map(line => line.length));
+      // Esperar un instante para que el navegador renderice el texto
+      // antes de tomar las medidas finales. Es la solución al problema de "timing".
+      setTimeout(() => {
+        const computedStyle = getComputedStyle(asciiBanner);
+        const lineHeight = parseFloat(computedStyle.lineHeight);
+        const charWidth = getCharWidth(ascii-banner);
 
-      const charWidth = getCharWidth();
-      const lineHeight = getLineHeight();
+        console.log(`✅ Arte cargado y listo para medir.`);
+        console.log(`📏 Medidas por carácter (px): ${charWidth.toFixed(2)} W × ${lineHeight.toFixed(2)} H`);
 
-      const totalWidth = columnCount * charWidth;
-      const totalHeight = lineCount * lineHeight;
+        const columnStart = 151;
+        const buttonWidthChars = 22;
+        const pixelAdjustment = 3.5; // <-- 🔥 AJUSTA ESTE VALOR PARA EL AJUSTE FINO 🔥
 
-      wrapper.style.width = `${totalWidth}px`;
-      wrapper.style.height = `${totalHeight}px`;
-      overlay.style.width = `${totalWidth}px`;
-      overlay.style.height = `${totalHeight}px`;
+        const positionLink = (selector, topRow, leftCol) => {
+          const element = document.querySelector(selector);
+          if (element) {
+            element.style.top = `${topRow * lineHeight}px`;
+            element.style.left = `${(leftCol * charWidth) + pixelAdjustment}px`;
+            element.style.width = `${buttonWidthChars * charWidth}px`;
+            element.style.height = `${lineHeight}px`;
+          }
+        };
 
-      console.log(`✅ Arte calibrado: ${lineCount} líneas × ${columnCount} columnas`);
-      console.log(`📐 Dimensiones (px): ${totalWidth.toFixed(2)} W × ${totalHeight.toFixed(2)} H`);
-      console.log(`📏 Medidas por carácter (px): ${charWidth.toFixed(2)} W × ${lineHeight.toFixed(2)} H`);
+        // Posicionar todos los botones
+        positionLink('.tech-1', 2, columnStart);
+        positionLink('.tech-2', 3, columnStart);
+        positionLink('.tech-3', 4, columnStart);
 
-      // --- Posicionamiento Dinámico de Botones ---
-      
-      const columnStart = 151;
-      const buttonWidthChars = 22;
+        positionLink('.research-1', 6, columnStart);
+        positionLink('.research-2', 7, columnStart);
+        positionLink('.research-3', 8, columnStart);
 
-      const positionLink = (selector, topRow, leftCol) => {
-        const element = document.querySelector(selector);
-        if (element) {
-          element.style.top = `${topRow * lineHeight}px`;
-          element.style.left = `${(leftCol * charWidth) + 3.5}px`;
-          element.style.width = `${buttonWidthChars * charWidth}px`;
-          element.style.height = `${lineHeight}px`;
-        }
-      };
+        positionLink('.skills-1', 10, columnStart);
+        positionLink('.skills-2', 11, columnStart);
+        positionLink('.skills-3', 12, columnStart);
+        
+        positionLink('.ascii-1', 14, columnStart);
+        positionLink('.ascii-2', 15, columnStart);
+        positionLink('.ascii-3', 16, columnStart);
 
-      // TECHNICAL PORTFOLIO
-      positionLink('.tech-1', 2, columnStart);
-      positionLink('.tech-2', 3, columnStart);
-      positionLink('.tech-3', 4, columnStart);
+        positionLink('.contact-1', 18, columnStart);
+        positionLink('.contact-2', 19, columnStart);
+        positionLink('.contact-3', 20, columnStart);
 
-      // RESEARCH PORTFOLIO
-      positionLink('.research-1', 6, columnStart);
-      positionLink('.research-2', 7, columnStart);
-      positionLink('.research-3', 8, columnStart);
-
-      // SKILLS & METHODOLOGY
-      positionLink('.skills-1', 10, columnStart);
-      positionLink('.skills-2', 11, columnStart);
-      positionLink('.skills-3', 12, columnStart);
-      
-      // ASCII ART
-      positionLink('.ascii-1', 14, columnStart);
-      positionLink('.ascii-2', 15, columnStart);
-      positionLink('.ascii-3', 16, columnStart);
-
-      // CONTACT
-      positionLink('.contact-1', 18, columnStart);
-      positionLink('.contact-2', 19, columnStart);
-      positionLink('.contact-3', 20, columnStart);
-
-      console.log('✅ Botones invisibles posicionados dinámicamente.');
-
+        console.log('✅ Botones posicionados con un ajuste de: ' + pixelAdjustment + 'px');
+      }, 0); // El setTimeout(..., 0) le da al navegador el tiempo que necesita para "dibujar"
     })
     .catch(error => {
       console.error('⚠️ Error al cargar el banner:', error);
-      asciiBanner.style.visibility = 'visible'; // Asegurarse de que sea visible incluso si hay error
     });
 });
