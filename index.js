@@ -44,7 +44,7 @@ window.addEventListener('DOMContentLoaded', () => {
           const element = document.querySelector(selector);
           if (element) {
             element.style.top = `${topRow * lineHeight}px`;
-            element.style.left = `${(leftCol * charWidth) + 5.0}px`;
+            element.style.left = `${(leftCol * charWidth) + 15.0}px`;
             element.style.width = `${buttonWidthChars * charWidth}px`;
             element.style.height = `${lineHeight}px`;
           }
