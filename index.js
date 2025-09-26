@@ -1,6 +1,6 @@
 /* ╔════════════════════════════════════════════════════════════════════════════╗
    ║  Módulo: index.js                                                          ║
-   ║  Versión: v4.0 — 2025-09-24 — Método de medición robusto y definitivo      ║
+   ║  Versión: v4.1 — 2025-09-25 — Versión corregida y funcional                ║
    ╚════════════════════════════════════════════════════════════════════════════╝ */
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -26,12 +26,10 @@ window.addEventListener('DOMContentLoaded', () => {
     .then(data => {
       asciiBanner.textContent = data;
 
-      // Esperar un instante para que el navegador renderice el texto
-      // antes de tomar las medidas finales. Es la solución al problema de "timing".
       setTimeout(() => {
         const computedStyle = getComputedStyle(asciiBanner);
         const lineHeight = parseFloat(computedStyle.lineHeight);
-        const charWidth = getCharWidth(ascii-banner);
+        const charWidth = getCharWidth(asciiBanner); // <-- CORRECCIÓN 1
 
         console.log(`✅ Arte cargado y listo para medir.`);
         console.log(`📏 Medidas por carácter (px): ${charWidth.toFixed(2)} W × ${lineHeight.toFixed(2)} H`);
@@ -44,7 +42,7 @@ window.addEventListener('DOMContentLoaded', () => {
           const element = document.querySelector(selector);
           if (element) {
             element.style.top = `${topRow * lineHeight}px`;
-            element.style.left = `${(leftCol * charWidth) + 30.0}px`;
+            element.style.left = `${(leftCol * charWidth) + pixelAdjustment}px`; // <-- CORRECCIÓN 2
             element.style.width = `${buttonWidthChars * charWidth}px`;
             element.style.height = `${lineHeight}px`;
           }
@@ -72,7 +70,7 @@ window.addEventListener('DOMContentLoaded', () => {
         positionLink('.contact-3', 20, columnStart);
 
         console.log('✅ Botones posicionados con un ajuste de: ' + pixelAdjustment + 'px');
-      }, 0); // El setTimeout(..., 0) le da al navegador el tiempo que necesita para "dibujar"
+      }, 0);
     })
     .catch(error => {
       console.error('⚠️ Error al cargar el banner:', error);
