@@ -1,6 +1,6 @@
 /* ╔════════════════════════════════════════════════════════════════════════════╗
-   ║  Módulo: index.css — Entrada ética con arte ASCII interactivo           ║
-   ║  Versión: v3.0 — 2025-09-22 — Lógica de posicionamiento centralizada en JS ║
+   ║  Módulo: index.css — Zonas clicables sobre arte ASCII                     ║
+   ║  Versión: v5.0 — 2025-09-26 — Interacción invisible y trazabilidad        ║
    ╚════════════════════════════════════════════════════════════════════════════╝ */
 
 body {
@@ -29,8 +29,8 @@ body {
 
 #ascii-banner {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 16px; /* Usar un valor en px para mediciones consistentes */
-  line-height: normal; /* Permitir que el JS mida la altura real */
+  font-size: 16px;
+  line-height: normal;
   white-space: pre;
   margin: 0;
   padding: 0;
@@ -44,14 +44,14 @@ body {
   pointer-events: none;
 }
 
-/* La lógica de posicionamiento (top, left) ahora está en index.js */
 .ascii-link {
   position: absolute;
-  cursor: pointer;
-  z-index: 10;
   background-color: transparent;
   pointer-events: auto;
   border: none;
+  z-index: 10;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /* 🧪 Activar trazabilidad visual temporal */
@@ -59,3 +59,4 @@ body {
   border: 1px dashed lime;
   background-color: rgba(0, 255, 0, 0.1);
 }
+
