@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         const columnStart = 151;
         const buttonWidthChars = 22;
-        const pixelAdjustment = 2.5; // <-- 🔥 AJUSTA ESTE VALOR PARA EL AJUSTE FINO 🔥
+        const pixelAdjustment = 0.5; // <-- 🔥 AJUSTA ESTE VALOR PARA EL AJUSTE FINO 🔥
 
         const positionLink = (selector, topRow, leftCol) => {
           const element = document.querySelector(selector);
