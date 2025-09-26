@@ -29,7 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => {
         const computedStyle = getComputedStyle(asciiBanner);
         const lineHeight = parseFloat(computedStyle.lineHeight);
-        const charWidth = getCharWidth(asciiBanner); // <-- CORRECCIÓN 1
+        const charWidth = getCharWidth(asciiBanner); // Correcto, sin guion
 
         console.log(`✅ Arte cargado y listo para medir.`);
         console.log(`📏 Medidas por carácter (px): ${charWidth.toFixed(2)} W × ${lineHeight.toFixed(2)} H`);
