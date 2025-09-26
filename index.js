@@ -1,15 +1,14 @@
 /* ╔════════════════════════════════════════════════════════════════════════════╗
-   ║  Módulo: index.js                                                          ║
-   ║  Versión: v4.1 — 2025-09-25 — Versión corregida y funcional                ║
+   ║  Módulo: index.js — Arte ASCII interactivo como botón                     ║
+   ║  Versión: v5.0 — 2025-09-26 — Zonas clicables sobre caracteres            ║
    ╚════════════════════════════════════════════════════════════════════════════╝ */
 
 window.addEventListener('DOMContentLoaded', () => {
   const asciiBanner = document.getElementById('ascii-banner');
 
-  // Función para medir el ancho real de un carácter
   function getCharWidth(element) {
     const span = document.createElement('span');
-    span.textContent = 'M'; // Carácter de referencia
+    span.textContent = 'M';
     span.style.fontFamily = getComputedStyle(element).fontFamily;
     span.style.fontSize = getComputedStyle(element).fontSize;
     span.style.visibility = 'hidden';
@@ -20,7 +19,6 @@ window.addEventListener('DOMContentLoaded', () => {
     return width;
   }
 
-  // Cargar arte ASCII y posicionar botones
   fetch('banner.txt')
     .then(response => response.text())
     .then(data => {
@@ -29,47 +27,29 @@ window.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => {
         const computedStyle = getComputedStyle(asciiBanner);
         const lineHeight = parseFloat(computedStyle.lineHeight);
-        const charWidth = getCharWidth(asciiBanner); // Correcto, sin guion
+        const charWidth = getCharWidth(asciiBanner);
+        const pixelAdjustment = 2.5;
 
-        console.log(`✅ Arte cargado y listo para medir.`);
-        console.log(`📏 Medidas por carácter (px): ${charWidth.toFixed(2)} W × ${lineHeight.toFixed(2)} H`);
+        console.log(`✅ Arte cargado. Medidas: ${charWidth.toFixed(2)}px × ${lineHeight.toFixed(2)}px`);
 
-        const columnStart = 151;
-        const buttonWidthChars = 22;
-        const pixelAdjustment = 0.5; // <-- 🔥 AJUSTA ESTE VALOR PARA EL AJUSTE FINO 🔥
-
-        const positionLink = (selector, topRow, leftCol) => {
+        const positionZone = (selector, topRow, leftCol, widthChars = 22, heightLines = 1) => {
           const element = document.querySelector(selector);
           if (element) {
             element.style.top = `${topRow * lineHeight}px`;
-            element.style.left = `${(leftCol * charWidth) + pixelAdjustment}px`; // <-- CORRECCIÓN 2
-            element.style.width = `${buttonWidthChars * charWidth}px`;
-            element.style.height = `${lineHeight}px`;
+            element.style.left = `${(leftCol * charWidth) + pixelAdjustment}px`;
+            element.style.width = `${widthChars * charWidth}px`;
+            element.style.height = `${heightLines * lineHeight}px`;
           }
         };
 
-        // Posicionar todos los botones
-        positionLink('.tech-1', 2, columnStart);
-        positionLink('.tech-2', 3, columnStart);
-        positionLink('.tech-3', 4, columnStart);
+        // Zonas activas sobre arte ASCII
+        positionZone('.tech-1', 2, 151);
+        positionZone('.research-1', 6, 151);
+        positionZone('.skills-1', 10, 151);
+        positionZone('.ascii-1', 14, 151);
+        positionZone('.contact-1', 18, 151);
 
-        positionLink('.research-1', 6, columnStart);
-        positionLink('.research-2', 7, columnStart);
-        positionLink('.research-3', 8, columnStart);
-
-        positionLink('.skills-1', 10, columnStart);
-        positionLink('.skills-2', 11, columnStart);
-        positionLink('.skills-3', 12, columnStart);
-        
-        positionLink('.ascii-1', 14, columnStart);
-        positionLink('.ascii-2', 15, columnStart);
-        positionLink('.ascii-3', 16, columnStart);
-
-        positionLink('.contact-1', 18, columnStart);
-        positionLink('.contact-2', 19, columnStart);
-        positionLink('.contact-3', 20, columnStart);
-
-        console.log('✅ Botones posicionados con un ajuste de: ' + pixelAdjustment + 'px');
+        console.log('✅ Zonas clicables posicionadas.');
       }, 0);
     })
     .catch(error => {
