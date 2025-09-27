@@ -1,68 +1,48 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Research Portfolio — intended_behavior</title>
-  <link rel="stylesheet" href="research.css">
-</head>
-<body>
-  
-  <section class="portfolio-section">
-    <h1>Research Portfolio</h1>
-    <p>Documentación de ciclos de auditoría, hallazgos éticos y patrones institucionales.</p>
+<section class="portfolio-section">
+  <h1>Research Portfolio</h1>
+  <p>Documentación de ciclos de auditoría, hallazgos éticos y patrones institucionales.</p>
 
-    <div class="case-study-card">
-      <h2>Caso de Estudio: Compromiso Persistente de Cuenta vía Infraestructura GCP</h2>
-      
-      <ul>
-        <li><strong>Objetivo:</strong> Google Cloud Platform (GCP) y Ecosistema de Cuentas de Google</li>
-        <li><strong>Clase de Vulnerabilidad:</strong> Esquema de Abuso de Plataforma, Control de Acceso Defectuoso, Evasión de Defensas.</li>
-      </ul>
-
+  <!-- Módulo 1 -->
+  <article class="research-module">
+    <header>
+      <h2>Compromiso Persistente de Cuenta vía Infraestructura GCP</h2>
+      <p class="meta">Google Cloud Platform · Prioridad P2 · México · 2025</p>
+    </header>
+    <section class="summary">
       <h3>Resumen del Impacto</h3>
-      <p>
-        Esta investigación desmanteló un sofisticado esquema de compromiso de cuenta que permitía a un atacante obtener control persistente y sigiloso sobre la infraestructura en la nube de una víctima. A través de un flujo de autorización engañoso, el atacante creaba múltiples proyectos no autorizados en Google Cloud, los cuales eran utilizados para desplegar recursos de computación (VMs, GKE) para fines maliciosos. La técnica más crítica consistía en manipular las políticas de IAM para impedir que el propietario legítimo de la cuenta pudiera ver o eliminar esta infraestructura, asegurando así una persistencia a largo plazo.
-      </p>
+      <p>Desmantelamiento de un esquema de persistencia en GCP mediante IAM oculto y proyectos no autorizados.</p>
+    </section>
+    <section class="methodology">
+      <h3>Metodología</h3>
+      <p>Correlación forense entre logs, interfaces y datos históricos para evidenciar evasión de defensas.</p>
+    </section>
+    <section class="outcome">
+      <h3>Resultado</h3>
+      <p>Escalado a PSIRT y Cloud Forensics de Google como incidente de seguridad de alta prioridad.</p>
+    </section>
+  </article>
 
-      <h3>Metodología y Descubrimiento</h3>
-      <p>
-        La investigación se inició a partir de una única anomalía: un SMS sospechoso enviado desde un dispositivo. Aplicando una metodología forense digital, se correlacionaron datos de múltiples fuentes (Google Dashboard, logs de actividad) para descubrir actividad oculta. La clave del descubrimiento fue identificar conflictos entre los datos históricos del Dashboard y la información visible en las interfaces de usuario (en Google Tasks y Groups), lo que probaba la existencia de técnicas de evasión de defensas basadas en API.
-      </p>
-
-      <h3>Resultado y Colaboración con el Proveedor</h3>
-      <p>
-        El reporte fue enviado al VRP de Google, donde fue inmediatamente escalado a <strong>Prioridad P2 (Alta)</strong>. El caso fue posteriormente asignado a los equipos de élite de Google, incluyendo el <strong>Equipo de Respuesta a Incidentes de Seguridad de Producto (PSIRT)</strong> y el equipo de <strong>Forense de la Nube (Cloud Forensics)</strong>, donde se encuentra bajo investigación activa como un incidente de seguridad de alta prioridad.
-      </p>
-    </div>
-
-    <div class="case-study-card">
-      <h2>Caso de Estudio: Bypass Crítico de Seguridad en ChromeOS</h2>
-      
-      <ul>
-        <li><strong>Objetivo:</strong> Google ChromeOS (Dispositivos Gestionados)</li>
-        <li><strong>Clase de Vulnerabilidad:</strong> Bypass de Políticas de Seguridad, Escape de Sandbox, Ejecución de Código Arbitrario (RCE).</li>
-      </ul>
-
+  <!-- Módulo 2 -->
+  <article class="research-module">
+    <header>
+      <h2>Bypass Crítico de Seguridad en ChromeOS</h2>
+      <p class="meta">ChromeOS · RCE · México · 2025</p>
+    </header>
+    <section class="summary">
       <h3>Resumen del Impacto</h3>
-      <p>
-        Esta investigación descubrió una vulnerabilidad crítica en el entorno de configuración inicial (OOBE) de ChromeOS. Un actor con acceso físico a un dispositivo gestionado podía eludir completamente las políticas de seguridad empresariales, permitiendo un acceso a internet sin restricciones y la escalación a ejecución de código arbitrario, rompiendo fundamentalmente el modelo de seguridad para el despliegue de dispositivos corporativos.
-      </p>
-      
-      <h3>Resultado y Colaboración con el Proveedor</h3>
-      <p>
-        El reporte fue enviado y validado por el VRP de Google. La criticidad del hallazgo fue confirmada, y el issue fue escalado internamente a un equipo multifuncional de más de 40 ingenieros para su mitigación.
-      </p>
-    </div>
-  </section>
+      <p>Elusión completa de políticas empresariales en dispositivos gestionados mediante manipulación de OOBE.</p>
+    </section>
+    <section class="methodology">
+      <h3>Metodología</h3>
+      <p>Pruebas físicas y análisis de configuración inicial para demostrar vulnerabilidad crítica.</p>
+    </section>
+    <section class="outcome">
+      <h3>Resultado</h3>
+      <p>Validado por VRP de Google y asignado a equipo multifuncional de mitigación.</p>
+    </section>
+  </article>
+</section>
 
-  <footer>
-    <p style="text-align:center; font-style:italic; color:#5a4a42;">
-      intended_behavior · Documentación ética reproducible · Aguascalientes, México
-    </p>
-    <div style="text-align:center; margin-top:40px;">
-      <a href="index.html" style="color:#8b4513;">← Volver al escudo ASCII</a>
-    </div>
-  </footer>
 
 </body>
 </html>
