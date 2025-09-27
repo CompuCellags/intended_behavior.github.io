@@ -1,6 +1,6 @@
 /* ╔════════════════════════════════════════════════════════════════════════════╗
-   ║  Módulo: index.css — Zonas clicables sobre arte ASCII                     ║
-   ║  Versión: v5.1 — 2025-09-26 — Superposición precisa y trazabilidad ética ║
+   ║  Módulo: index.css — Interfaz ética estilo ASCII                          ║
+   ║  Versión: v5.2 — 2025-09-26 — Botones visibles y trazabilidad visual      ║
    ╚════════════════════════════════════════════════════════════════════════════╝ */
 
 body {
@@ -30,37 +30,12 @@ body {
 #ascii-banner {
   font-family: 'JetBrains Mono', monospace;
   font-size: 16px;
-  line-height: normal; /* ← permite medición precisa desde JS */
+  line-height: 20px; /* ← definido explícitamente para trazabilidad JS */
   white-space: pre;
   margin: 0;
   padding: 0;
   box-shadow: 0 0 20px rgba(63, 163, 161, 0.6);
-  position: relative; /* ← necesario para que los botones se superpongan correctamente */
-}
-
-.ascii-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none; /* ← evita interferencia con el banner */
-}
-
-.ascii-link {
-  position: absolute;
-  background-color: transparent;
-  pointer-events: auto;
-  border: none;
-  z-index: 10;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-/* 🧪 Activar trazabilidad visual temporal */
-.ascii-link.debug {
-  border: 1px dashed lime;
-  background-color: rgba(0, 255, 0, 0.1);
+  position: relative;
 }
 
 /* 🎨 Botones visibles estilo ASCII */
