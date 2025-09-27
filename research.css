@@ -1,84 +1,64 @@
-/* === research.css === */
-/* Tema sepia narrativo para el módulo de investigación */
-
-/* === Estructura general === */
-body {
-  background-color: #fdf6e3;
-  font-family: 'Georgia', serif;
-  color: #3b2f2f;
-  margin: 0;
-  padding: 0;
-}
-
-/* === Sección principal === */
-section {
-  background-color: #fffaf0;
+/* === Módulos independientes === */
+.research-module {
+  background-color: #fff8e1;
   border-left: 6px solid #a67c52;
-  padding: 40px;
-  margin: 40px auto;
-  max-width: 900px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 60px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(60, 40, 30, 0.2);
 }
 
-/* === Título del módulo === */
-h1 {
-  font-size: 2em;
-  text-transform: uppercase;
-  border-bottom: 2px solid #d2b48c;
-  margin-bottom: 20px;
-  color: #3b2f2f;
+/* Encabezado del módulo */
+.research-module header h2 {
+  margin-top: 0;
+  font-size: 1.6em;
+  color: #5a3e2b;
+  border-bottom: 1px dashed #d2b48c;
+  padding-bottom: 8px;
 }
 
-/* === Párrafos introductorios === */
-p {
-  font-size: 1.1em;
-  color: #5a4a42;
-  margin-bottom: 20px;
-}
-
-/* === Listado de hallazgos éticos === */
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 10px;
-  font-size: 1em;
-  color: #4a3a2a;
-}
-
-/* === Enlaces === */
-a {
-  color: #8b4513;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* === Footer narrativo === */
-footer {
-  background-color: #fdf6e3;
-  padding: 20px;
-  border-top: 2px solid #d2b48c;
-  box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
-  text-align: center;
-}
-
-footer p {
-  margin: 0;
-  font-size: 0.95em;
+.research-module .meta {
+  font-size: 0.9em;
   font-style: italic;
-  color: #5a4a42;
+  color: #7a5a44;
+  margin-bottom: 20px;
 }
 
-footer a {
+/* Secciones internas */
+.research-module section {
+  margin-bottom: 20px;
+}
+
+.research-module h3 {
+  font-size: 1.2em;
+  color: #4a3a2a;
+  margin-bottom: 10px;
+  border-left: 4px solid #c2a67c;
+  padding-left: 10px;
+}
+
+/* ASCII banner opcional */
+.ascii-banner {
+  white-space: pre;
+  font-family: monospace;
+  color: #d2a679;
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: #fef9e6;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: inset 0 0 6px rgba(120, 90, 60, 0.2);
+}
+
+/* Navegación entre módulos */
+.module-nav {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.module-nav a {
+  margin: 0 10px;
   color: #8b4513;
   font-weight: bold;
-  text-decoration: none;
 }
 
-footer a:hover {
-  text-decoration: underline;
