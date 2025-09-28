@@ -1,15 +1,25 @@
-/* === research.css (v2.0 - Integrado con ASCII Banner y Tema "Investigador") === */
+/* === research.css (v3.0 - Tema "Saturno Retro") === */
 
-/* === Estructura general y Tema "Investigador" === */
+/* --- Paleta de Colores "Saturno" --- */
+:root {
+  --space-bg: #0d1117;       /* Azul-negro del espacio profundo, como GitHub Dark */
+  --saturn-yellow: #f1e7a4;    /* Amarillo pálido de la atmósfera de Saturno */
+  --ring-white: #e6e6e6;        /* Blanco-grisáceo de los anillos */
+  --saturn-brown: #a67c52;      /* Marrón para bordes y acentos */
+  --content-bg: #f5f2e8;       /* Fondo crema muy claro para el texto */
+  --content-text: #3d3d3d;     /* Texto oscuro para contenido legible */
+}
+
+/* === Estructura general y Tema === */
 body {
-  background-color: #fdf6e3; /* Un color pergamino claro para el fondo */
-  font-family: 'Georgia', 'Times New Roman', serif; /* Una fuente con serifa para un look clásico */
-  color: #5a3e2b; /* Color de texto base (marrón oscuro) */
+  background-color: var(--space-bg);
+  font-family: 'VT323', monospace; /* Fuente retro-pixelada (añadir a tu HTML desde Google Fonts si quieres) o 'Courier New' */
+  color: var(--ring-white);
   margin: 0;
   padding: 0;
 }
 
-/* === Contenedor para centrar el banner (Estructural) === */
+/* === Contenedor y Envoltorio (Estructural) === */
 .retro-container {
   display: flex;
   justify-content: center;
@@ -17,7 +27,6 @@ body {
   min-height: 100vh;
 }
 
-/* === Envoltorio para el banner y los botones (Estructural) === */
 .ascii-wrapper {
   position: relative;
   width: auto;
@@ -26,19 +35,19 @@ body {
   margin: 0 auto;
 }
 
-/* === Estilo del Banner ASCII (Adaptado a tu tema) === */
+/* === Estilo del Banner ASCII (Tema Saturno) === */
 #ascii-banner {
-  font-family: 'Courier New', monospace; /* Monospace para el arte ASCII */
+  font-family: 'Courier New', monospace;
   font-size: 16px; 
   line-height: normal;
   white-space: pre;
   margin: 0;
   padding: 0;
-  color: #8b4513; /* Color de "tinta" para el arte */
-  text-shadow: 0 0 5px rgba(139, 69, 19, 0.3); /* Sombra sutil color sepia */
+  color: var(--saturn-yellow); /* El color principal de la atmósfera */
+  text-shadow: 0 0 8px rgba(241, 231, 164, 0.4); /* Resplandor de monitor antiguo */
 }
 
-/* === Capa de superposición para botones (Estructural) === */
+/* === Capa y Botones (Estructural) === */
 .ascii-overlay {
   position: absolute;
   top: 0;
@@ -46,7 +55,6 @@ body {
   pointer-events: none;
 }
 
-/* === Estilo de los botones invisibles (Estructural) === */
 .ascii-link {
   position: absolute;
   cursor: pointer;
@@ -56,50 +64,45 @@ body {
   border: none;
 }
 
-/* === Estilo de depuración (Opcional, pero útil) === */
+/* === Estilo de depuración (Opcional) === */
 .ascii-link.debug {
-  border: 1px dashed #a67c52;
-  background-color: rgba(166, 124, 82, 0.1);
+  border: 1px dashed var(--saturn-yellow);
+  background-color: rgba(241, 231, 164, 0.1);
 }
 
-/* === Estilos para las páginas de contenido (Tus Módulos de Investigación) === */
+/* === Estilos para las páginas de contenido (Diseño Conservador) === */
 /* Usa la clase .content-section en las páginas de cada caso */
 .content-section {
-  background-color: #fff8e1;
-  border-left: 6px solid #a67c52;
+  background-color: var(--content-bg);
+  color: var(--content-text);
+  border-left: 6px solid var(--saturn-brown);
   margin: 60px auto;
   padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 0 12px rgba(60, 40, 30, 0.2);
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   max-width: 900px;
+  font-family: 'Georgia', serif; /* Cambiamos a una fuente más legible para textos largos */
 }
 
-.content-section header h2 {
-  margin-top: 0;
+.content-section h2 {
+  font-family: 'Courier New', monospace; /* Mantenemos un toque retro en los títulos */
   font-size: 1.6em;
-  color: #5a3e2b;
-  border-bottom: 1px dashed #d2b48c;
+  color: var(--content-text);
+  border-bottom: 1px dashed var(--saturn-brown);
   padding-bottom: 8px;
 }
 
 .content-section .meta {
+  font-family: 'Courier New', monospace;
   font-size: 0.9em;
   font-style: italic;
   color: #7a5a44;
-  margin-bottom: 20px;
 }
 
 .content-section h3 {
+  font-family: 'Courier New', monospace;
   font-size: 1.2em;
-  color: #4a3a2a;
-  margin-bottom: 10px;
-  border-left: 4px solid #c2a67c;
+  color: var(--content-text);
+  border-left: 4px solid var(--saturn-brown);
   padding-left: 10px;
-}
-
-.content-section footer {
-  text-align: center;
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid #d2b48c;
 }
