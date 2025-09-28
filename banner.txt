@@ -1,29 +1,28 @@
-     xxxxxxxxxxxxxxxxxx                          ║═══════════════════════════════════════════════════════════════════════════════════════════════╗      xxxxxxxxxxxxxxxxxx
-    xxxxxxxxx xxxxxxxxxx                         ║═════════════════██████═███═══██═██████═█████═███═══██═██████══██████═██████═══════════════════║    xxxxxxxxxxxxxxxxxx
-    xxxxxxxx xxxxxxxxxxxxx                       ║═══════════════════██═══████══██═══██═══██════████══██══██══██═██══════██══██══════════════════║  xxxxxxxxxxxxxxxxx
-     xxxxxx xxxxxxxxxxxxxxxx                     ║═══════════════════██═══██═██═██═══██═══████══██═██═██══██══██═█████═══██══██══════════════════║ xxxxxxxxxxxx
-      xxxxx  xxxxxxxxxxxxxxxxxx                  ║═══════════════════██═══██══████═══██═══██════██═══███══██══██═██══════██══██══════════════════║ xxxxxxxxxxxxxx
-        xxxx     xxxxxxxxxxxxxxxx                ║═════════════════██████═██═══███═══██═══█████═██═══███═██████══██████═██████═══════════════════║ xxxxxxxxxxxxxxxxx
-           xx    xxxxxxxxxxxxxxxxx               ║═══════════════════════════════════════════════════════════════════════════════════════════════║ xxxxxxxxxxxxxx
-             xxxxxxxxxxxxxxxxxxxxxxxxx           ║  █████████══╗ ████████╗  ███═╗ ███═╗ █████████═╗ ███   ███═╗ ███████═╗ ████████═╗'████████══╗   xxxxxxxxxxxx
-             xxxxxxxxxxxxxxxxxxxxxxxxxx          ║   ███ ║ ███ ║ ███╔════╝  ███ ║ ███ ║ ███═╗ ███ ║ ███   ███ ║   ███ ╔═╝ ███  ███ ║ ███═╗ ███ ║   xxxxxxxxxx
-             x xxxxxxxxxxxxxxx     xxxxx         ║   ███ ║ ███ ║ ███╚══╗    ███ ║ ███ ║ ███   ███ ║ ███   ███ ║   ███ ║   ███  ███ ║ ███ ║ ███ ║   xxxxxxxx
-             xxx xxxxxxxxxxxxx        xxxx       ║   ███████═══║ ██████║    █████████ ║ █████████ ║ ███   ███ ║   ███ ║   ███  ███ ║ ███████  ║    xxxxxx                           
-             xxxxx xxxxxxxxxxxx         xxxx     ║   ███ ║ ███ ║ ███╔══╝    ███ ║ ███ ║ ███ ║ ███ ║  ███████ ║    ███ ║   ███  ███ ║ ███ ║███ ║    xxxx                 
-               xxxxxxxxx xxxxxxxxxx        xxxx  ║   ███'║ ███ ║ ███╚═════╗ ███ ║ ███ ║ ███ ║ ███ ║   █████ ║     ███ ╚═╗ ███  ███ ║ ███ ║ ███ ║   xxx          
-               xxxxxxxxxxxxx  xxxxxxxxxx      xxx║  █████████  ║ ████████ ║ ███ ║ ███ ║ ███ ║ ███ ║    ███ ║    ███████ ║ ████████ ║ ███ ║  ███ ║  xx        
-               xxxxxxxxxxxxxxxx  xxxxxxxxxx    x    ╚══════════╝ ╚════════╝ ╚═══╝ ╚═══╝ ╚═══╝ ╚═══╝    ╚═══╝    ╚═══════╝ ╚════════╝ ╚═══╝  ╚═══╝  x                 
-               xxxxxxxxxxxxxxxxxxxx xxxxxxxxxx   xxx           ("DEVELOP AGUASCALIENTES SECURITY RESEARCH & VULNERABILITY ANALYST")          xxx   xxxxxxxxxxxxxxxxxxxxx                         
-                xxxxxx xxx  xxxxxxxxxxxxxx       xxxxxx                                                                                       xxx   xxxxxxxxxxxxxxxxxxx                              
-             ' ''''xxxxxx  xxxxxxxxxxxxxxx  xxxxxxxxxxxxx'' ''''''''''''''''''''''''''''''oioiooxcoxocoxciooo''''''''''''''''''' ' ' ' '       xxx   xxxxxxxxxxxxxxx
-''          ''' '  ''xxxx   xxxxxxxxxxxxxxxxxx  ' xxxxxxxxx''''''''''''''''''''''''''ccccoosxoxicoxicoxcixcooo'oo''''''''''''' ' ' '' '  x      xxx    xxxxxxxxxxx
-'    '     '   ' '' ''║║ x    xxxxxxxxxx xxxxx  '' ''''xxxxxx '''''''''''''''''''''oooxxxioooxoxooxooxoxoxooxoxoxoxxiiioo''''''''''0             xxx     xxxxxxxx
-'     '   '     ''''''║║'''xx   xxxxxxxx xxxxx '' ''''''' xxxxx  '''''' '''' '''iiixiiicxooo'  coxxxxo'''   \xxx//0x0xxtc'ccc'''''''i0''''       xxx      xxxxxx
-' '    '      ''   '''║║'''  xxx xxxxxxx ' xxx  ' '''''''''xxxxxx ''''''''''''iixicoooo ' '  oco   '''xco '''   \xxi0iiixx''xccc''''i'''''''''  xxx       xxxxxx
-''     ' ' ''xxxxxxxxxxxxxxxxxxxx xxxxxx' ' xx' ''''''''' ''''' xxxx''''''''iicooo'''       'occ''    ocx        €|0ixx0xtt'ccc''''' '''''     xxx      xxxxxxx
-'''          xxxxxxxxxxxxxxxxxxxx''xxxxx '  xx ''''''''''''''''''  xxx'''~/ixxxxxxxi'''''    xxo '' ''xxo''' '' 'Xiiiiii----iioo''''''        xxx     xxxxxx
-'   ''-    -'xxxxxxxxxxxxxxxxxxxx   xxxx ''' x '''''' '''''''''''''   xx'''~~xxtxtiii''      ''ooiiiixx       xooxxxoxoxooxxoo''''''''''    xxx    xxxx 
-'   -   '''''''  ''''''''' ''' ''' ''xxx  ' 'x ''''''''''''''''''''''   xx¡'''oxiiiooxxxooxxxoxooxooxoxoxoxoxoxoxo'oooo'''ccc'c'''''''    xxx   xxx
-' ''''''  -'-   '''''' ''''   ' ' ''  xx ''''x''''''''''''''''''''''''''x''''cc''''oxoxoxoxoxoxcccccccccpcpcpxxxxxxxxx'''''''''''''''   xxx  xx
-    '''''''''''' ''''''''' ''''''''''  x''''''''''''''''''''''''''''''''''''''''''''''''iooociocicocicooxxoxoxo'''''''''''''''''''''''xxx x
-''''''''''''''''''''''''''''c'c'c''c''''''''o'o''o''o'''''''''''''''''''''''''''''''''''''''''c'''''c'c'c'c'''''''''''''''''''''''''xxx
+════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                                              xxxxxxxxxxxxx'xxxxxxxxxxxxxxxxxxx'''xxxxx''                              ║
+║                                     xxxxxxxxxxxxxxxxx'xxxxxxxxxxxxxxxxx''''        xxxxx''                            ║
+║                                 xxxxxxxxxxxxxxxxxx'xxxxxxxxxxxxx'''''                  xxxxx''                        ║
+║                            xxxx'xxxxxxxxxxxxxxx'xxxxxxxxxxx''''''                          xxxxx''                    ║
+║                        xxxxxx'xxxxxxxxxxxxxx'xxxxxxxxx''''''                                   xxxx''                 ║
+║                    xxxxxxxx'xxxxxxxxxxxxx'xxxxxxx'''''                                             xxx''              ║
+║                 xxxxxxxxx'xxxxxxxxxxxx'xxxx''''                                                        xx'            ║
+║     xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'''''                                                                              ║
+║  xcxxxxxxxxx'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'xxxxxxxxxxxx'xxxxxxxxxxxxxxxxxxxxxxxx'x'''''                  ║
+║  xxcxxxxxx'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'xxxxxxxxxxx'xxxxxxxxxxxxxxx'x'''''''''                          ║
+║  xxcxxxx'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'xxxxxxxxxx'xxxxxxxxx'x''''''                                       ║
+║  xcx       xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'xxxxxxxxx'xxxxx'x'''''                                               ║
+║  x           xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'xxxxxxxx'xx'x'''''                                                     ║
+║                xxxxxxxxxxxxxxxxxxxxxxxxxxxxx'xx''''''    ██████═███═══██═██████═█████═███═══██═██████══██████═██████══║
+║                  cccxxxxxxxxxxxxxxxxxxxxxxxx''''           ██═══████══██═══██═══██════████══██══██══██═██══════██══██═║
+║                     ccxxxxxxxxxxxxxxxxxxx''''              ██═══██═██═██═══██═══████══██═██═██══██══██═█████═══██══██═║
+║                        cxxxxxxxxx'xxxx'xxxx''              ██═══██══████═══██═══██════██═══███══██══██═██══════██══██═║
+║                           'cxxxx'xxxxxxxxx'xxx''         ██████═██═══███═══██═══█████═██═══███═██████══██████═██████══║
+║ __________________________   cx'xxxxxx'xxxxxx'xxxxx''                                                                 ║
+║  "DEVELOP AGUASCALIENTES"      c'xxxxx'xxxxxxxx'xcxxxxx''           ██████═████═██═██═█████═██══██═████═█████═██████══║
+║                                   cccc'cxxxxxxx'xx  'cccxx''         █══██═██═══██═██═██═██═██══██══██══██═██═██══██══║
+║    SECURITY RESEARCH &               ccc'cxxxxxxc'xx    'xxxxx''     ███═══███══█████═█████═██══██══██══██═██═████════║
+║   VULNERABILITY ANALYST                   ccccxxxxx'xx     'cccxxx'  █══██═██═══██═██═██═██══████═══██══██═██═██═██═══║
+║ __________________________                    cccxxxxx'xx        '  ██████═████═██═██═██═██═══██═══████═█████═██══██══║
+║                                                    ccccccxx'xx       'ccccx''                                         ║
+║                                                           ccccc'xx         'ccccx''                                   ║
+╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
