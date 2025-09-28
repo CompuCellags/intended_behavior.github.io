@@ -1,10 +1,10 @@
-                                                                          ((//xxxxxxxxxxxxcxccxcxcxcxcxcxxx\\))
+                                                                           ((//xxxxxxxxxxxxxccxcxcxcxcxcxxx\\))
  ╔════════════════════════════════════════════════╗                    ((/0xxxxxcxcccxccxcxcxcxcxcxcxcxcccxxcxcx))
  ║  D E V E L O P   A G U A S C A L I E N T E S   ║                 (((xcixcixicixcixicixicxicixcixicixcixiccccixci))
  ║   SECURITY RESEARCH & VULNERABILITY ANALYST    ║              (((((xoocixcixciiciicxxocixcoixicxXcioxoicoixcoxic)))))
  ║                                                ║           (((((((sdsdisidsdiosodisoidiosdioivcXCiscioisdisoisdoi)))))))
  ║             "RESEARCH PORTFOLIO"               ║         ((((ooococoocooccoducdocdicduciocuoXCXCdicudiocudociuodiuc)))))))
- ╚════════════════════════════════════════════════╝        (((((((Dcdcdocdicodciodciodcidocidocidocdoicodicoiocidoicico)))))))xx''''                                   
+ ╚════════════════════════════════════════════════╝   '''''(((((((Dcdcdocdicodciodciodcidocidocidocdoicodicoiocidoicico)))))))xx''''                                   
                                          xxxxxxxxxxxx''''(((((((idcidicidcdiocdocidocidiocdocidocidocidocidoodidcidoccccd))))))'xxxxxx '''
                                  xxxxxxxxxxxxx___x___   ((((((((iasiaisoasaosiaosiaoisaoisoaisoasoiasiaiosioaoisaoisoiccca))))))) ''xxxxxxxxx''''
                             xxxxxxxxxxxx__xx_____'''   (((((((((cciciciciciciciicciocciocicociocoiciocXoicoicoicoicocoiocc))))))))   'xxxx'xxxxxxxxx''''
@@ -13,20 +13,21 @@
                          xxxxxxxxx__xxx______x__x-''x____                cccciicocoicoicoicoicoioicoiciooXicoicoiocioiciocoi)))))))))      x''x-x------xxxxxxxxxxx'''
                           xxxxxxxx__xx_x___________---xx- x'''''x'''____           ccccoioicoocoiciooicoiocoicoicicoicoioic))))))))))     xxx''xxxxxx'x'x'x'x'xxxxxxxx''''
                             xxxxxxxx___xxx____________''''xx-    x''''''x''''x___                          oicoicocicciocioc)))))))))    x''x''''x'xxxxxxx'x''xccxxxxxxxxx'''
-                             xxxxxx___xxxxx_________x''x'x-    x''''''x'''''x---_____                                                  '-'--'xx'x'xxxxxxxxxcx'x'cccx'xxxxxxxx'''
-                               xxxxxx____xxxxxxx______    'x'x''x-_____ x'''''x''''x'-''\\'''''''''xxx'x'x'''x''x'x'x'x'x'''x'------//--------xx¡''x''xxxxccxxxxxccc'x''xxxxxxx'''
-                                 xxxxxxx______xxxxxxxx_______ 'x'x''xx-_________x''''''x'xc'-x''-x------x-x-----x-'x''x'-xx--x-x-x''-x-xx-x'xx-x-x-x-x-  x'--x'x-xxxxxxxxx''xxxx'''
-                                   xxxxxxxxxx____xxxxxxxxxxxx''''x-___________x'''''''''x'''''''''x'''x'''x''x'x'x''x''''''''''''''''''''xxx'   x''xx-xx'x'x'xx'x'xx'''''''''xxx''''
-                                      xxxxxxxxxxxx______xxxxxxxxxxx''''x--x'''''''x''''''x'''x'''x'x'x'x'x'x'x''x'''''''''''xxxx'x'x'x'''''x'x'x'x'x  'x''x''''x'xx'x''''''''xx''''''
-                                         xxxxxxxxxxxxx____________''''''''x'''''cc'''''x'x'x''''c'c''''c''''''''''''''''ccc'c''x'x'x'''''i'''''''x'c'c''c''c''c''c'c'c'''''''''xx'''
-                                               --------------------x---x-x---x--x--x-x--..x-x-x''''''x'x'x'''x'x''''''''''''''xxx'x'--x--x--x-x-x-'''c'c'''''''''x''''''''''x''''
-                                                           _________________-x-x-x-x--x..-x-x-x-x-x--x-x-x-x-x---'''''''''''''''''''''''''''''''''''''''''xxxxx''''''x'''''''
-                                                      (((((((xccxn               ____________----''..'''c'''''''x''''´---x-x-x----__________x-xxx---x-x-x-x''''''x'''''''
+                             xxxxxx___xxxxx_________x''x'x-    x''''''x'''''x---_____                                                  '-'--'xx'x'xxxxxxxxxcx'x'cccx'xxxxxxxx''''
+                               xxxxxx____xxxxxxx______    'x'x''x-_____ x'''''x''''x'-''\\'''''''''xxx'x'x'''x''x'x'x'x'x'''x'------//--------xx¡''x''xxxxccxxxxxccc'x''xxxxxxx'''''
+                                 xxxxxxx______xxxxxxxx_______ 'x'x''xx-_________x''''''x'xc'-x''-x------x-x-----x-'x''x'-xx--x-x-x''-x-xx-x'xx-x-x-x-x-  x'--x'x-xxxxxxxx''xxx'''x'''
+                                   xxxxxxxxxx____xxxxxxxxxxxx''''x-___________x'''''''''x'''''''''x'''x'''x''x'x'x''x''''''''''''''''''''xxx'   x''xx-xx'x'x'xx'x'xx''''''''''xxx'''''
+                                      xxxxxxxxxxxx______xxxxxxxxxxx''''x--x'''''''x''''''x'''x'''x'x'x'x'x'x'x''x'''''''''''xxxx'x'x'x'''''x'x'x'x'x  'x''x''''x'xxx'''''''''xx'''''''
+                                         xxxxxxxxxxxxx____________''''''''x'''''cc'''''x'x'x''''c'c''''c''''''''''''''''ccc'c''x'x'x'''''i'''''''x'c'c''c''c''c''c'c'''c''''''xx'''''
+                                               --------------------x---x-x---x--x--x-x--..x-x-x''''''x'x'x'''x'x''''''''''''''xxx'x'--x--x--x-x-x-'''c'c'''''''''x''''''''''''x''''
+                                                           _________________-x-x-x-x--x..-x-x-x-x-x--x-x-x-x-x---'''''''''''''''''''''''''''''''''''''''''xxxxx''''''x'''''''''
+                                                      (((((((xccxn               ____________----''..'''c'''''''x''''´---x-x-x----__________x-xxx---x-x-x-x''''''x''''''''
                                                       (((((((cccuununununununun             ____xxx'x'x''x'x'''_____?''_______xxnnxnnxxx'x'x'_____'''''''''''x''''''
-                                                       (((((((((((((xcxcxcxcxcxcxcxcxcxc                                                 xxx________'''x'''''
-                                                        (((((xcxcxcxcccx-cx-cxcxcxcxcxxc-cx-cx-c-c-cx-c-cx-cx-cx-cx--cx-cx-cx))))))_
-                                                         (((((xcxccxcxcxcxcxcxccxcxxccxcxvxccxcxcxcxcxcxccxcxcxcccxxccxcxcxcx)))))                  
-                                                           (((((cccnccncncnncncncncncnncncununucucnuncuncuncuncununcunuccn))))))
-                                                              ((((((uucuxcucxucuucxucxucxucxucucxucxucxucxucxcucucxcuuxu)))))
-                                                                   (((((((cxncxnvxcnvnxcnvnxcnvnxcvnxcnvncxnvnvnncvnvx))))
-                                                                       (((xxcxcxcxcxcxcxcxcxcxcxcxcxcxcxcxcxcxcxc)))))
+                                                       (((((((((((((xcxcxcxcxcxcxcxcxcxc                                                 xxx________'''x''''''
+                                                        (((((xcxcxcxcccx-cx-cxcxcxcxcxxc-cx-cx-c-c-cx-c-cx-cx-cx-cx--cx-cx-cx)))))))
+                                                         (((((xcxccxcxcxcxcxcxccxcxxccxcxvxccxcxcxcxcxcxccxcxcxcccxxccxcxcxcx))))))                  
+                                                           (((((cccnccncncnncncncncncnncncununucucnuncuncuncunxcununcunuccn)))))))
+                                                             ((((((uucuxcucxucuucxucxucxucxucucxucxucxucxucxcxucucxcuuxu)))))))))
+                                                               (((((((cxncxnvxcnvnxcnvnxcnvnxcvnxcnvncxnvnvxxxcxcxnncvnvx))))))
+                                                                  (((xxcxcxcxcxcxcxcxcxcxcxcxcxcxcxxxcxcxcxxcxcxcxcxc))))))))
+                                                                      (((8xnxnxnxnxnxnxnxnxnxnxnnxnnxnxnxuxuxuxunxnx))))))
