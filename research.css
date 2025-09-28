@@ -1,15 +1,80 @@
-/* === Módulos independientes === */
-.research-module {
+/* === research.css (v2.0 - Integrado con ASCII Banner y Tema "Investigador") === */
+
+/* === Estructura general y Tema "Investigador" === */
+body {
+  background-color: #fdf6e3; /* Un color pergamino claro para el fondo */
+  font-family: 'Georgia', 'Times New Roman', serif; /* Una fuente con serifa para un look clásico */
+  color: #5a3e2b; /* Color de texto base (marrón oscuro) */
+  margin: 0;
+  padding: 0;
+}
+
+/* === Contenedor para centrar el banner (Estructural) === */
+.retro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* === Envoltorio para el banner y los botones (Estructural) === */
+.ascii-wrapper {
+  position: relative;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  margin: 0 auto;
+}
+
+/* === Estilo del Banner ASCII (Adaptado a tu tema) === */
+#ascii-banner {
+  font-family: 'Courier New', monospace; /* Monospace para el arte ASCII */
+  font-size: 16px; 
+  line-height: normal;
+  white-space: pre;
+  margin: 0;
+  padding: 0;
+  color: #8b4513; /* Color de "tinta" para el arte */
+  text-shadow: 0 0 5px rgba(139, 69, 19, 0.3); /* Sombra sutil color sepia */
+}
+
+/* === Capa de superposición para botones (Estructural) === */
+.ascii-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+/* === Estilo de los botones invisibles (Estructural) === */
+.ascii-link {
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+  background-color: transparent;
+  pointer-events: auto;
+  border: none;
+}
+
+/* === Estilo de depuración (Opcional, pero útil) === */
+.ascii-link.debug {
+  border: 1px dashed #a67c52;
+  background-color: rgba(166, 124, 82, 0.1);
+}
+
+/* === Estilos para las páginas de contenido (Tus Módulos de Investigación) === */
+/* Usa la clase .content-section en las páginas de cada caso */
+.content-section {
   background-color: #fff8e1;
   border-left: 6px solid #a67c52;
-  margin-bottom: 60px;
+  margin: 60px auto;
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 0 12px rgba(60, 40, 30, 0.2);
+  max-width: 900px;
 }
 
-/* Encabezado del módulo */
-.research-module header h2 {
+.content-section header h2 {
   margin-top: 0;
   font-size: 1.6em;
   color: #5a3e2b;
@@ -17,19 +82,14 @@
   padding-bottom: 8px;
 }
 
-.research-module .meta {
+.content-section .meta {
   font-size: 0.9em;
   font-style: italic;
   color: #7a5a44;
   margin-bottom: 20px;
 }
 
-/* Secciones internas */
-.research-module section {
-  margin-bottom: 20px;
-}
-
-.research-module h3 {
+.content-section h3 {
   font-size: 1.2em;
   color: #4a3a2a;
   margin-bottom: 10px;
@@ -37,28 +97,9 @@
   padding-left: 10px;
 }
 
-/* ASCII banner opcional */
-.ascii-banner {
-  white-space: pre;
-  font-family: monospace;
-  color: #d2a679;
-  text-align: center;
-  margin-bottom: 30px;
-  background-color: #fef9e6;
-  padding: 20px;
-  border-radius: 6px;
-  box-shadow: inset 0 0 6px rgba(120, 90, 60, 0.2);
-}
-
-/* Navegación entre módulos */
-.module-nav {
+.content-section footer {
   text-align: center;
   margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #d2b48c;
 }
-
-.module-nav a {
-  margin: 0 10px;
-  color: #8b4513;
-  font-weight: bold;
-}
-
