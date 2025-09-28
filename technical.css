@@ -1,27 +1,80 @@
-/* === technical.css === */
-/* Tema gris institucional para artefactos técnicos */
+/* === technical.css (v2.0 - Integrado con ASCII Banner) === */
 
-/* === Estructura general === */
+/* === Estructura general y Tema Institucional === */
 body {
-  background-color: #f0f0f0;
+  background-color: #1e1e1e; /* Un fondo oscuro funciona mejor con el brillo del ASCII */
   font-family: 'Courier New', monospace;
-  color: #222;
+  color: #ccc; /* Color de texto base */
   margin: 0;
   padding: 0;
 }
 
-/* === Sección principal === */
-section {
+/* === Contenedor para centrar el banner (del index.css) === */
+.retro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* === Envoltorio para el banner y los botones (del index.css) === */
+.ascii-wrapper {
+  position: relative;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  margin: 0 auto;
+}
+
+/* === Estilo del Banner ASCII === */
+#ascii-banner {
+  font-family: 'Courier New', monospace; /* Tu fuente elegida */
+  font-size: 16px; 
+  line-height: normal;
+  white-space: pre;
+  margin: 0;
+  padding: 0;
+  color: #555; /* Un gris oscuro para el arte, para que no compita con los botones */
+  text-shadow: 0 0 10px rgba(204, 204, 204, 0.4); /* Un brillo sutil */
+}
+
+/* === Capa de superposición para botones (del index.css) === */
+.ascii-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+/* === Estilo de los botones invisibles (del index.css) === */
+.ascii-link {
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+  background-color: transparent;
+  pointer-events: auto;
+  border: none;
+}
+
+/* === Estilo de depuración (Opcional, pero útil) === */
+.ascii-link.debug {
+  border: 1px dashed orange;
+  background-color: rgba(255, 165, 0, 0.1);
+}
+
+/* === Estilos para las páginas de contenido (como los case files) === */
+/* Estos son los estilos que definiste, adaptados para el contenido interno */
+.content-section {
   background-color: #ffffff;
   border-left: 6px solid #555;
   padding: 40px;
   margin: 40px auto;
   max-width: 900px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  color: #222; /* El color de texto oscuro para el contenido */
 }
 
-/* === Título del módulo === */
-h1 {
+.content-section h1 {
   font-size: 2em;
   text-transform: uppercase;
   border-bottom: 2px solid #ccc;
@@ -29,57 +82,15 @@ h1 {
   color: #222;
 }
 
-/* === Párrafos introductorios === */
-p {
+.content-section p {
   font-size: 1.1em;
   color: #444;
   margin-bottom: 20px;
 }
 
-/* === Listado de artefactos técnicos === */
-ul {
-  list-style-type: square;
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 10px;
-  font-size: 1em;
-  color: #333;
-}
-
-/* === Enlaces === */
-a {
-  color: #0055aa;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* === Footer institucional === */
-footer {
-  background-color: #f0f0f0;
-  padding: 20px;
+.content-section footer {
+  margin-top: 40px;
+  padding-top: 20px;
   border-top: 2px solid #ccc;
-  box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
   text-align: center;
-}
-
-footer p {
-  margin: 0;
-  font-size: 0.95em;
-  font-style: italic;
-  color: #444;
-}
-
-footer a {
-  color: #0055aa;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
 }
