@@ -1,12 +1,12 @@
 /* ╔════════════════════════════════════════════════════════════════════════════╗
    ║  Módulo: research.js                                                       ║
-   ║  Versión: v1.0 — 2025-09-27 — Lógica para el portafolio de investigación   ║
+   ║  Versión: v2.0 — 2025-09-29 — Lógica para el hub de investigación           ║
    ╚════════════════════════════════════════════════════════════════════════════╝ */
 
 window.addEventListener('DOMContentLoaded', () => {
   const asciiBanner = document.getElementById('ascii-banner');
 
-  function getCharWidth(element) {
+  function getCharDimensions(element) {
     const span = document.createElement('span');
     span.textContent = 'M';
     span.style.fontFamily = getComputedStyle(element).fontFamily;
@@ -14,9 +14,9 @@ window.addEventListener('DOMContentLoaded', () => {
     span.style.visibility = 'hidden';
     span.style.position = 'absolute';
     document.body.appendChild(span);
-    const width = span.getBoundingClientRect().width;
+    const { width, height } = span.getBoundingClientRect();
     document.body.removeChild(span);
-    return width;
+    return { charWidth: width, lineHeight: height };
   }
 
   fetch('banner3.txt')
@@ -24,19 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     .then(data => {
       asciiBanner.textContent = data;
       setTimeout(() => {
-        const computedStyle = getComputedStyle(asciiBanner);
-        // Medir lineHeight directamente desde el elemento renderizado para mayor precisión.
-        const tempSpan = document.createElement('span');
-        tempSpan.textContent = 'M';
-        tempSpan.style.fontFamily = computedStyle.fontFamily;
-        tempSpan.style.fontSize = computedStyle.fontSize;
-        tempSpan.style.visibility = 'hidden';
-        tempSpan.style.position = 'absolute';
-        asciiBanner.appendChild(tempSpan);
-        const lineHeight = tempSpan.getBoundingClientRect().height;
-        asciiBanner.removeChild(tempSpan);
-        
-        const charWidth = getCharWidth(asciiBanner);
+        const { charWidth, lineHeight } = getCharDimensions(asciiBanner);
         console.log(`📏 Medidas por carácter (px): ${charWidth.toFixed(2)} W × ${lineHeight.toFixed(2)} H`);
 
         const positionLink = (selector, topRow, leftCol, widthChars, heightRows = 1) => {
@@ -50,16 +38,15 @@ window.addEventListener('DOMContentLoaded', () => {
         };
 
         // --- Coordenadas para los botones de investigación ---
-        // (Fila de inicio, Columna de inicio, Ancho en caracteres)
-        positionLink('.gcp-case', 9, 3, 67, 3);
-        positionLink('.chromeos-case', 14, 3, 67, 3);
-        positionLink('.back-button', 22, 26, 20);
+        positionLink('.apple-case', 19, 2, 53, 3);
+        positionLink('.msrc-case', 23, 2, 53, 3);
+        positionLink('.gcp-case', 27, 2, 53, 3);
+        positionLink('.back-button', 32, 20, 22);
 
         console.log('✅ Botones del portafolio de investigación posicionados.');
-      }, 100); // Un pequeño retardo para asegurar que todo esté renderizado
+      }, 100); 
     })
     .catch(error => {
       console.error('⚠️ Error al cargar el banner de investigación:', error);
     });
 });
-
