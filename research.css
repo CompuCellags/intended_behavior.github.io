@@ -1,30 +1,35 @@
-/* === research.css (v3.0 - Tema "Saturno Retro") === */
+/* === research.css (v3.1 - Tema "Saturno Retro + Index Visual") === */
 
 /* --- Paleta de Colores "Saturno" --- */
 :root {
-  --space-bg: #0d1117;       /* Azul-negro del espacio profundo, como GitHub Dark */
-  --saturn-yellow: #f1e7a4;    /* Amarillo pálido de la atmósfera de Saturno */
-  --ring-white: #e6e6e6;        /* Blanco-grisáceo de los anillos */
-  --saturn-brown: #a67c52;      /* Marrón para bordes y acentos */
-  --content-bg: #f5f2e8;       /* Fondo crema muy claro para el texto */
-  --content-text: #3d3d3d;     /* Texto oscuro para contenido legible */
+  --space-bg: #0d1117;         /* Azul-negro del espacio profundo */
+  --saturn-yellow: #f1e7a4;    /* Amarillo pálido atmosférico */
+  --ring-white: #e6e6e6;       /* Blanco-grisáceo de los anillos */
+  --saturn-brown: #a67c52;     /* Marrón para bordes y acentos */
+  --content-bg: #f5f2e8;       /* Fondo crema claro */
+  --content-text: #3d3d3d;     /* Texto oscuro legible */
 }
 
-/* === Estructura general y Tema === */
+/* === Fondo general con imagen === */
 body {
-  background-color: var(--space-bg);
-  font-family: 'VT323', monospace; /* Fuente retro-pixelada (añadir a tu HTML desde Google Fonts si quieres) o 'Courier New' */
+  background-image: url('wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'VT323', monospace;
   color: var(--ring-white);
   margin: 0;
   padding: 0;
 }
 
-/* === Contenedor y Envoltorio (Estructural) === */
+/* === Contenedor estructural === */
 .retro-container {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 40px;
 }
 
 .ascii-wrapper {
@@ -35,19 +40,29 @@ body {
   margin: 0 auto;
 }
 
-/* === Estilo del Banner ASCII (Tema Saturno) === */
+/* === Banner ASCII con estilo Saturno + efecto index === */
 #ascii-banner {
   font-family: 'Courier New', monospace;
-  font-size: 16px; 
-  line-height: normal;
+  font-size: 16px;
   white-space: pre;
-  margin: 0;
-  padding: 0;
-  color: var(--saturn-yellow); /* El color principal de la atmósfera */
-  text-shadow: 0 0 8px rgba(241, 231, 164, 0.4); /* Resplandor de monitor antiguo */
+  color: var(--saturn-yellow);
+  text-shadow: 0 0 8px rgba(241, 231, 164, 0.4);
+  background-color: rgba(13, 17, 23, 0.6); /* capa semitransparente */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(241, 231, 164, 0.3);
+  max-width: 90%;
+  overflow-x: auto;
+  animation: fadeIn 1.2s ease-out;
 }
 
-/* === Capa y Botones (Estructural) === */
+/* === Animación suave de entrada === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === Capa y botones flotantes === */
 .ascii-overlay {
   position: absolute;
   top: 0;
@@ -64,45 +79,5 @@ body {
   border: none;
 }
 
-/* === Estilo de depuración (Opcional) === */
-.ascii-link.debug {
-  border: 1px dashed var(--saturn-yellow);
-  background-color: rgba(241, 231, 164, 0.1);
-}
-
-/* === Estilos para las páginas de contenido (Diseño Conservador) === */
-/* Usa la clase .content-section en las páginas de cada caso */
-.content-section {
-  background-color: var(--content-bg);
-  color: var(--content-text);
-  border-left: 6px solid var(--saturn-brown);
-  margin: 60px auto;
-  padding: 30px;
-  border-radius: 4px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  max-width: 900px;
-  font-family: 'Georgia', serif; /* Cambiamos a una fuente más legible para textos largos */
-}
-
-.content-section h2 {
-  font-family: 'Courier New', monospace; /* Mantenemos un toque retro en los títulos */
-  font-size: 1.6em;
-  color: var(--content-text);
-  border-bottom: 1px dashed var(--saturn-brown);
-  padding-bottom: 8px;
-}
-
-.content-section .meta {
-  font-family: 'Courier New', monospace;
-  font-size: 0.9em;
-  font-style: italic;
-  color: #7a5a44;
-}
-
-.content-section h3 {
-  font-family: 'Courier New', monospace;
-  font-size: 1.2em;
-  color: var(--content-text);
-  border-left: 4px solid var(--saturn-brown);
-  padding-left: 10px;
-}
+/* === Estilo de depuración (opcional) === */
+.ascii-link.debug
