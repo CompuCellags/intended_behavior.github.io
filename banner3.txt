@@ -1,38 +1,38 @@
-║══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
-║  `   ````   ``  ```  ` ``~~¶~~~~~~~~  `   ` `  ```    ```` `  `  ` `` ``        oooooooooxxxxoooo     ` `` ```  ``` ` ``   `````  `   `  ``   `````` `` `` ``  ``   ````  ```  ```      ````   ``║
-║  ` `` ``` ```````````` ~~~~~¶~~~~~~~~~  ` ```````    ` `````  ````  ````  oo(ççççççççççcçcçcçxxxxxxç)))oo      ` ` ``` ``````   `` ````  ~~~~~   ```  ````   ` ``  `  ```` ```  ``  ````` ```````║
-║ ````   ``  ``  ` ` `  ~~~~~~~¶~~~~~~~~~ ``  ` ` ```````    `` ```````oooo((//xxxxxxxxxxxcxcxcxcxcxxxxxoxx\\))o     ` `  ````` `` ```` ¬¬¬~~~~~~~~`  ```   ` `   `` `  ``` ``` ` ``   ``   ```   `║
-║ ╔════════════════════════════════════════════════╗  ` ````````````oooo((/0xxxxxcccxccxcxxcxcxcxcxcccxxxxxxcxcx))o      `  `````  ` ` ¬¬¬~~~~~~~~~~ `  ` ` `    ` `    ` `` ``   ` ``  ` `   ` ``'║
-║ ║  D E V E L O P   A G U A S C A L I E N T E S   ║`  `````  ````oo(((xcixcixicixcixicxicicixicixxxxxcixiccccixci))o      ``` `` ``    ¬¬~~~~~~~~~ `  ` `   ````    `   `  `    ``    ` `  `  ` ``║
-║ ║   SECURITY RESEARCH & VULNERABILITY ANALYST    ║`  ````` ` oo(((((xoocixcixciiciocixcoixcxxxxXcioxoicoixcoxic)))))o     ``       `     ~~~~~ ``````   `  ``  ```     `    `   ``   ``   ```   `║
-║ ║                                                ║`` ``` ``o(((((((sdsdisidsdiosodisosdioivXCxxxiscioisdisoisdoi)))))))o   ~~  ``  ` ````  ````   ``````   ``  `  `   ``   ```````   ``````````` ║
-║ ║             "RESEARCH PORTFOLIO"               ║ `  '''o((((ooococoocooccoducdocdicdcuoXCXdicudiocudoxxciuodiuc)))))))o          ~~  ```    ` ``    ` ` ` `         `    `   `   `   `  `   ` `║
-║ ╚════════════════════════════════════════════════╝'''''o((((((((Dcddocdicodciodciodcidocidocdoicodicoiocidoicico)xx))))))))ocxx ''      ` `~~    `      `   `  `    `       `     ~~`~  `     ` `║
-║` ``` ` `` `` ~~~ ``` `  `~~       '''''  xxx  xxxxxo((((((((((idcidiidcdiocdocidocidiocdodocidocidocidoodidcidocxxcccd)))))))oxxxxx '''         ¬¬  ` ``` ``          ``` `` ` ` ~~ `~~   ` `   `║
-║`  ```` ` ` ~~~ ~~~ ` ~~     x'''''' xxxxxx  ___   o((((((((((asiaisoaaosiaosiaoisaoisoaisoasoiasiaiosioaoisaoixxsoiccca)))))))o ''xxxx     ''''        ¬¬ ` ``    `   `   `````    ~~ `   `  ````║
-║ ` ``` ``` ` ~~~~ ~~    x'''''''   xxxx_  x___    o((((((((((ccccicicicciciicciocciocicociocoiciocXicoicoicxoxicocoiocc)))))))))o    'xxxx'xx    xxx''''       ¬¬ `   ``  ``   ```    `  ` `   ` `║
-║ `  ` ```` ` ~~     x'''''''   xxxxxxx__x__xx     o((((((((((cxxxccocioiidioccidoicdoicodicodicoidcidociodcxixodcidocodci))))))))o      xx'xx'xxx   x-  ''''       ¬¬`   `    ```   ``` `  `  `  `║
-║  `  ``` ``~~     x''''''''   xxxxxx____  __xx_           xxxxxxcixiicicoocociicciciicocoiciococoioicXociococoixciooico)))))))))ooo       x----'x'x   oo'x  xx'''      ¬¬ `   `   ````   `   `   `║
-║` ```  ` `~~     x'''''''   xxxxxx__xxx_  ____x-''x____              xccccicocoicoicoicoicoioicoiciooXicicoiocxxioiciocoi)))))))oooo        x-x------   xx  x  x'''       ¬ ``   ` ` ````  `   ` `║
-║  `  ````  ~~    `x'''''''   xxxxx__xx_x_  ______---xx- x'''''____           ccccxoioicoocoiciooicoiococoicicoicxxoioic))))))))))ooo        oxxxxxx'x'x   x'x    xxx''''     ¬¬ ` ``   ````   `  `║
-║` ` ` ``````~~      x'''''''   xxxxxx___xxx  ________''''xx-    x''''''''x_         xxxxxxxxxxuxuxuxuxoicoicxxocicciocioc))))))))ooo       oooox'xxxxxxx'x   ccx   xxxx  ''     ¬¬` ```  ```  ``` ║
-║`  ```` ````  ~~      x'''''''    xx___xxxxx_  ____x''x'x-    x''''''x'''''x-____                                                        oooo'xxxxxxxxxcx'x   cx'x   xxxx  '''     ¬¬`    ` ` ` ``║
-║ `  ```  `  `   ~~       x''''''     x____xxxxxx  ___    'x'x''x-_____ x'''''x'x'-''\\'''''''''xxx'xxçç--çç-ç--çççç-ç-ç-çç-ç-ç-ç-ç-  \\////x¡''x''xxxxccxxx   cc'x'   xxxxx'  '''    ¬¬`  ````  ` ║
-║ `` ```   ```` ` ``~~       x''''''      xx______x  xxx___-----------------------''''x'xc'-x''-x------x-x-----x-'x''x'-xx--x-x-x  -x-xx'xx-x-x  -x-  x'--x'   xxxxxx    xx'''  ''''   ¬¬ ``      `║
-║`  ``````````  `   `  ~~       x'''''''     xxxxx____  xxxxxxxx''''x-___________'''''''x'''''''''x'''x'''x''x'x'x''x'''''''  ''''''''''xx'   x  xx-xx'x''   x'xx'''''    'xxx''  '''   ¬¬ `  `   `║
-║ `   ``  `  `  `  ` `  ` `~~      x'''''''      xxxxxxx___ xxxxxxxxxxx''''x--x'''''''''''x'''x'''x'x'x'x'x'x'x''x''''''  '''xxxx'x'x'x''''x'  'x'x  'x   ''x'xxx'''''   'xx''''  '''   ¬¬  `   `  ║
-║ ` `` ~~~~`   ```    ` `   ```~~       x''''''      xxxxxxxxx _________''''''''x'-----------------c'c''''c'''''''''  '''''ccc'c''x'x'x'''  ''''x'c'c   ''c'''c'c'''   ''''xx'''  ''   ¬¬ `   ``` `║
-║ ``` ~~~~~~  `  ````  `  ```  `````~~        x''''     '--------  --------x---x-x--x--xx-x--..x-x-x''''''x'x'--  --------------------'  --x--x--x'   'c''''''''    ''''''''x  ''''  ¬¬ `   ` `  ``║
-║````  ~~~~  `  ````  `  `  ` ``` ` ```` ~~         x'''''''''''''-----------------x--x-x-..-x-x-x-x-x--x-x-  x-x---''''''''''''''''  ''''''''''   ''''''xxx    ''x'''''''  ''''   ¬¬  `   ````   `║
-║  `  `````  ```  `  `  `    `    ` `     ` ```~~                              ''''''-----------''..'''c  '''''x''''´---x-x-x----  ________x-   --x-xx  '''  '''''''''  '''    ¬¬`   ````````  `` `║
-║ `  `  `  ``  ```    ```` ```  `  `  `  ` ` ` `` `   o((((((cccuununu                 '''-----------------------------------   ----------   --__  '''''  ''''''''  '''   ¬¬`  ````   ``   ``   ` `║
-║ ``  ````  ``  ` ````` ``  `````` ``   `` `````` ``  o((((((((((((xcxcxcxcxcxcxc                                                    '''''' ''   ''''  ''''''''     ¬¬   ```   `  ` `  `  ` `` ````║
-║ `  ````     `      `      ` ``    ` ``     ` `  `    oo(((((xcxcxcxcccx--cxcxcxcxcxxøøøøøøøøøøøøøøøøøøøøøøøøøøøoøøcx-x))oo)))øoo  ~~~   ~~~   ~~  ~ ~~     ~~       `` ` ```````` ` ```````  `  `║
-║`   ````   `  `  `     ```    ` ` ` `     `   `    `    o(((((xcxccxcxcxcxcxccxcxxccxcxvxxcxcxccxccxcxxcccxxxcoxcxxcxoox)))ooooo    ``` `` `    ``      ` `   ```     `   `          ` ``    `   `║
-║      `  ` ````   `  ``` `  `````   `````  ``` ````````    o((((((cccnccncncnncncncncnncncnuucnunncuncuncxxxupnncncoooøooooooo     `` ``  `     `   `  `   `` ```  ` `        `         ` `     ` ║
-║  `   ` `      `   `    ````   `  `  `   `````  ``````        oo(((uucuxcucxucuxucxucxucooxcuccccuccxcxxuppcucxoooo)ooøooooo     ``    ``   `   ``    `      ` ``        ```    ``` `  `    ` ``` ║
-║ ` ```````  ______  ``````    `   ` `  ` ``   ``````  ` ``        oo((((cxncxnvxcnx(cnvooonxnvpvncxnooonncoooooooooooooo        `    ` `    `  `    ` ``   ``     ` ``   `   ` `   ``` ```   ```  ║
-║`  ` `  ~~~~~~~~~~~~~~` ```` ``` `   `   ````   `  ` `  ` ` `         ooxxcxcxcxcxc(cxooxcxcxoxc xcooooooooooooooo         ```    ``  `   ````     ```````    `````  `  `~~~~~ ``````````````  ```║
-║ `  ``~~~~~~~~~~~~~~~~~~``` `   ` `   ` ```    ```  ` ```  ``              ooooo(xnxnxnxnnxnnxxnxuxoooooooooo         `````   `` `     `` `````   `````````   ````````  ~~~~~~~  `` `   ``````````║
-║` ``~~~~~~~~~~~~~~~~~~~~~~`````````     `  `  `   ```  ` ` `   ```  ```          ______________________            ```  `````   `    ``   ` ``    ` `   `  `   `` ``     ~~~~~ ` ` ` ```` ``` ````║
-╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+║═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║  `   ````   ``  ```  ` ``~~¶~~~~~~~~  `   ` `  ```    ```` `  `  ` `` ``        oooooooxxxoooo     ` `` ```  ``` ` ``   `````  `   `  ``   `````` `` `` ``  ``   ````  ```  ```      ````   ``║
+║  ` `` ``` ```````````` ~~~~~¶~~~~~~~~~  ` ```````    ` `````  ````  ````  oo(ççççççççcçcçcçxxxxxç)))oo      ` ` ``` ``````   `` ````  ~~~~~   ```  ````   ` ``  `  ```` ```  ``  ````` ```````║
+║ ````   ``  ``  ` ` `  ~~~~~~~¶~~~~~~~~~ ``  ` ` ```````    `` ```````oooo((//xxxxxxxxxcxcxcxxcxxxxxoxx\\))o     ` `  ````` `` ```` ¬¬¬~~~~~~~~`  ```   ` `   `` `  ``` ``` ` ``   ``   ```   `║
+║ ╔════════════════════════════════════════════════╗  ` ````````````oooo((/0xxxxxcccxccxxcxcxcxxcccxxxxxxcxcx))o      `  `````  ` ` ¬¬¬~~~~~~~~~~ `  ` ` `    ` `    ` `` ``   ` ``  ` `   ` ``'║
+║ ║  D E V E L O P   A G U A S C A L I E N T E S   ║`  `````  ````oo(((xcixcixicixcixicxicixicixxxxcixiccccixci))o      ``` `` ``    ¬¬~~~~~~~~~ `  ` `   ````    `   `  `    ``    ` `  `  ` ``║
+║ ║   SECURITY RESEARCH & VULNERABILITY ANALYST    ║`  ````` ` oo(((((xoocixcixciiciocixcoixxxxXcoxoicoixcoxic)))))o     ``       `     ~~~~~ ``````   `  ``  ```     `    `   ``   ``   ```   `║
+║ ║                                                ║`` ``` ``o(((((((sdsdisidsdiosodisosdioivXxxisioisdisoisdoi)))))))o   ~~  ``  ` ````  ````   ``````   ``  `  `   ``   ```````   ``````````` ║
+║ ║             "RESEARCH PORTFOLIO"               ║ `  '''o((((ooococoocooccoducdocdicdcuoXCXdidioudoxxciuodiuc)))))))o          ~~  ```    ` ``    ` ` ` `         `    `   `   `   `  `   ` `║
+║ ╚════════════════════════════════════════════════╝'''''o((((((((Dcddocdicodciodciodcidocidocdoiciciocidoicico)xx))))))))ocxx ''      ` `~~    `      `   `  `    `       `     ~~`~  `     ` `║
+║` ``` ` `` `` ~~~ ``` `  `~~       '''''  xxx  xxxxxo((((((((((idcidiidcdiocdocidocidiocdodocidocidioodidcidocxxcccd)))))))oxxxxx '''         ¬¬  ` ``` ``          ``` `` ` ` ~~ `~~   ` `   `║
+║`  ```` ` ` ~~~ ~~~ ` ~~     x'''''' xxxxxx  ___   o((((((((((asiaisoaasiaosiaoisaoisoaisoasoiasiaiooaoisaoixxsoiccca)))))))o ''xxxx     ''''        ¬¬ ` ``    `   `   `````    ~~ `   `  ````║
+║ ` ``` ``` ` ~~~~ ~~    x'''''''   xxxx_  x___    o((((((((((cccciciciccciicciocciocicociocoiciocXicoiicxoxicocoiocc)))))))))o    'xxxx'xx    xxx''''       ¬¬ `   ``  ``   ```    `  ` `   ` `║
+║ `  ` ```` ` ~~     x'''''''   xxxxxxx__x__xx     o((((((((((cxxxccocioiiioccidoicdoicodicodicoidcidocioxixodcidocodci))))))))o      xx'xx'xxx   x-  ''''       ¬¬`   `    ```   ``` `  `  `  `║
+║  `  ``` ``~~     x''''''''   xxxxxx____  __xx_         xxxxxxcixiicicoocoiicciciicocoiciococoioicXociococoixciooico)))))))))ooo       x----'x'x   oo'x  xx'''      ¬¬ `   `   ````   `   `   `║
+║` ```  ` `~~     x'''''''   xxxxxx__xxx_  ____x-'____              xccccicooicoicoicoicoioicoiciooXicicoiocxxioiciocoi)))))))oooo        x-x------   xx  x  x'''       ¬ ``   ` ` ````  `   ` `║
+║  `  ````  ~~    `x'''''''   xxxxx__xx_x_  ______--x- x'''''____           cccxoioicoocoiciooicoiococoicicoicxxoioic))))))))))ooo        oxxxxxx'x'x   x'x    xxx''''     ¬¬ ` ``   ````   `  `║
+║` ` ` ``````~~      x'''''''   xxxxxx___xxx  ________''xx-    x''''''''x_        xxxxxxxxxxuxuxuxuxoicoicxxocicciocioc))))))))ooo       oooox'xxxxxxx'x   ccx   xxxx  ''     ¬¬` ```  ```  ``` ║
+║`  ```` ````  ~~      x'''''''    xx___xxxxx_  ____x''x-    x''''''x'''''x-___                                                        oooo'xxxxxxxxxcx'x   cx'x   xxxx  '''     ¬¬`    ` ` ` ``║
+║ `  ```  `  `   ~~       x''''''     x____xxxxxx  ___    'x''x-_____ x'''''x'x'''\\'''''''''xxx'xxçç--çç-ç--çççç-ç-ç-çç-ç-ç-ç-ç-  \\////x¡''x''xxxxccxxx   cc'x'   xxxxx'  '''    ¬¬`  ````  ` ║
+║ `` ```   ```` ` ``~~       x''''''      xx______x  xxx___---------------------'''x'xc'-x''-x------x-x-----x-'x''x'-xx--x-x-x  -x-xx'xx-x-x  -x-  x'--x'   xxxxxx    xx'''  ''''   ¬¬ ``      `║
+║`  ``````````  `   `  ~~       x'''''''     xxxxx____  xxxxxx''''x-___________''''''x'''''''''x'''x'''x''x'x'x''x'''''''  ''''''''''xx'   x  xx-xx'x''   x'xx'''''    'xxx''  '''   ¬¬ `  `   `║
+║ `   ``  `  `  `  ` `  ` `~~      x'''''''      xxxxxxx___ xxxxxxxxx''''x--x''''''''''x'''x'''x'x'x'x'x'x'x''x''''''  '''xxxx'x'x'x''''x'  'x'x  'x   ''x'xxx'''''   'xx''''  '''   ¬¬  `   `  ║
+║ ` `` ~~~~`   ```    ` `   ```~~       x''''''      xxxxxxxxx _______''''''''x'----------------c'c''''c'''''''''  '''''ccc'c''x'x'x'''  ''''x'c'c   ''c'''c'c'''   ''''xx'''  ''   ¬¬ `   ``` `║
+║ ``` ~~~~~~  `  ````  `  ```  `````~~        x''''     '--------  ------x---x-x--x--x-x--..x-x-x''''''x'x'--  --------------------'  --x--x--x'   'c''''''''    ''''''''x  ''''  ¬¬ `   ` `  ``║
+║````  ~~~~  `  ````  `  `  ` ``` ` ```` ~~         x'''''''''''''---------------x--x--..-x-x-x-x-x--x-x-  x-x---''''''''''''''''  ''''''''''   ''''''xxx    ''x'''''''  ''''   ¬¬  `   ````   `║
+║  `  `````  ```  `  `  `    `    ` `     ` ```~~                            ''''''----------''..'''c  '''''x''''´---x-x-x----  ________x-   --x-xx  '''  '''''''''  '''    ¬¬`   ````````  `` `║
+║ `  `  `  ``  ```    ```` ```  `  `  `  ` ` ` `` `  o((((((cccuununux               '''----------------------------------   ----------   --__  '''''  ''''''''  '''   ¬¬`  ````   ``   ``   ` `║
+║ ``  ````  ``  ` ````` ``  `````` ``   `` `````` `` o((((((((((((xcxxcxcxcxcxc                                                   '''''' ''   ''''  ''''''''     ¬¬   ```   `  ` `  `  ` `` ````║
+║ `  ````     `      `      ` ``    ` ``     ` `  `    oo(((((xcxcxcxcccx--cxcxcxcxxøøøøøøøøøøøøøøøøøøøøøøøøøøoøøcx-x))oo)))øoo  ~~~   ~~~   ~~  ~ ~~     ~~       `` ` ```````` ` ```````  `  `║
+║`   ````   `  `  `     ```    ` ` ` `     `   `    `    o(((((xcxccxcxcxcxcxccxxccxcxvxxcxxccxccxcxxcccxxxcoxcxxcxoox)))ooooo    ``` `` `    ``      ` `   ```     `   `          ` ``    `   `║
+║      `  ` ````   `  ``` `  `````   `````  ``` ````````    o((((((cccnccncncnncncncnncncnuununncuncuncxxxupnncncoooøooooooo     `` ``  `     `   `  `   `` ```  ` `        `         ` `     ` ║
+║  `   ` `      `   `    ````   `  `  `   `````  ``````        oo(((uucuxcucxucuxucxxucooxcucccuccxcxxuppcucxoooo)ooøooooo     ``    ``   `   ``    `      ` ``        ```    ``` `  `    ` ``` ║
+║ ` ```````  ______  ``````    `   ` `  ` ``   ``````  ` ``        oo((((cxncxnvxcnx(cooonxnvpncxnooonncoooooooooooooo        `    ` `    `  `    ` ``   ``     ` ``   `   ` `   ``` ```   ```  ║
+║`  ` `  ~~~~~~~~~~~~~~` ```` ``` `   `   ````   `  ` `  ` ` `         ooxxcxcxcxcxc(cxocxxoxcxxcooooooooooooooo         ```    ``  `   ````     ```````    `````  `  `~~~~~ ``````````````  ```║
+║ `  ``~~~~~~~~~~~~~~~~~~``` `   ` `   ` ```    ```  ` ```  ``              ooooo(xnxnxnxxnxxnxuxoooooooooo         `````   `` `     `` `````   `````````   ````````  ~~~~~~~  `` `   ``````````║
+║` ``~~~~~~~~~~~~~~~~~~~~~~`````````     `  `  `   ```  ` ` `   ```  ```          ___________________            ```  `````   `    ``   ` ``    ` `   `  `   `` ``     ~~~~~ ` ` ` ```` ``` ````║
+╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
