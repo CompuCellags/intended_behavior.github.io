@@ -25,12 +25,10 @@ body {
 
 /* === Contenedor anclado al centro === */
 .retro-container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1000;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 /* === Envoltorio del banner === */
