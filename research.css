@@ -42,8 +42,8 @@ body {
 
 /* === Banner ASCII === */
 #ascii-banner {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 15px;
   white-space: pre;
   color: var(--saturn-yellow);
   text-shadow: 0 0 8px rgba(241, 231, 164, 0.4);
