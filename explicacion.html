@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>INTENDED BEHAVIOR — Skills & Methodology</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilos para mantener la consistencia con tu página principal */
+        body {
+            background-color: #0d0d0d;
+            color: #00ff9b;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 40px 20px;
+            box-sizing: border-box;
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAUVBMVEWFhYWDg4N3d3dtbW17e3t1dXWBgYGHh4d5eXlzc3OLi4ubm5uVlZWPj4+NjY19fX2JiYl/f39ra2uRkZGZmZlpaWmXl5dvb29xcXGTk5NnZ2c8TV1mAAAAG3RSTlNAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEAvEOwtAAAAYnRSTlMA+e/uQe2/Qf/7+lD+8/1R/v37Vf788Fr+/P5R/v39Vv79/v5d/v3+Vv3+/v39/v39/v39/v39/v39/v39/v39/v39/v3+8f79/v39/v39/v39/v388/39/v39/v3+8f79/v39/v39/v3+Vv388/39/v39/v39/v388wAAAcpJREFUeNpiYGBkYmVEBUGVlZGFgYGBkYmVEBWWVlZGVkZGQGZzc3Nzc3Nzc3Nzc3Nzc3NzcyMYGBkZGRkZGRkZGRkZGRkZGRkZMYGBkZGRkZGRkZGRkZGRkZGRkZMYGBkZGRkZGRkZGRkZGRkZGRkZMYGBkZGRkZGRkZGRkZGRkZGRkZMYGBkZGRkZGRkZGRkZGRkZGRkZMYGBkZGRkZGRkZGRkZGRkZGRkZMYGBkZGRkZGRkZGRkZGRkZGRkZMYGBkZGRkZGRkZGRkZGRkZGRkZMYGBkZGRkZGRkZGRkZGRkZGRkZMYGBkZGRkZGRkZGRkZGRkZGRkZMYGBkZGRkZGRkZGRkZGRkZGRkZMYGBkZGRkZGRkZGRkZGRkZGRkZMYGBkZGRkZGRkZGRkZGRkZGRkZMYGBkZGRkZGRkZGRkZGRkZGRkZMYGBkZGRkZGRkZGRkZGRkZGRkZMYGBkZGRkZGRkZGRkZGRkZGRkZMYGBkZGRkZGRkZGRkZGRkZGRkZMYGBkZGRkZGRkZGRkZGRkZGRkZMYGBkZGRkZGRkZGRkZGRkZGRkZMYGBkZGRkZGRkZGRkZGRkZGRkZMYGBkZGRkZGRkZGRkZGRkZGRkZMZgYAAANP8Bjv9QDJAAAAAElFTkSuQmCC');
+        }
+        .retro-container {
+            width: 100%;
+            max-width: 1200px;
+            border: 2px solid #00ff9b;
+            padding: 25px 40px;
+            box-shadow: 0 0 25px rgba(0, 255, 155, 0.5);
+            background-color: rgba(0, 20, 10, 0.85);
+        }
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 11px;
+            line-height: 1.2;
+            text-align: center;
+            color: #00c281;
+            text-shadow: 0 0 5px rgba(0, 255, 155, 0.7);
+        }
+        h2, h3 {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 0 0 8px #00ff9b;
+        }
+        h2 {
+            font-size: 24px;
+            border-bottom: 1px dashed #00ff9b;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+        h3 {
+            font-size: 18px;
+            margin-top: 30px;
+        }
+        p, ul {
+            font-size: 16px;
+            line-height: 1.7;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 10px;
+        }
+        ul li::before {
+            content: '>';
+            margin-right: 15px;
+            text-shadow: 0 0 5px #00ff9b;
+        }
+        /* Estilo para el botón de regreso */
+        .ascii-button-wrapper {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .ascii-button {
+            display: inline-block;
+            color: #00ff9b;
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1;
+        }
+        .ascii-button:hover {
+            background-color: #00ff9b;
+            color: #0d0d0d;
+            text-shadow: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="retro-container">
+        
+        <header>
+            <pre>
+</pre>
+            <h2>Skills & Methodology</h2>
+        </header>
+
+        <main>
+            <p>
+                Nuestra investigación se basa en una metodología disciplinada que fusiona la filosofía clásica con el análisis de seguridad moderno. No solo buscamos errores; deconstruimos sistemas para comprender sus supuestos fundamentales e identificar los fallos que conducen a vulnerabilidades sistémicas.
+            </p>
+
+            <h3>Principios Fundamentales</h3>
+            <ul>
+                <li><strong>Indagación Socrática:</strong> Entablamos un diálogo constante con el sistema, formulando preguntas fundamentales para desafiar su lógica de seguridad y descubrir verdades ocultas.</li>
+                <li><strong>Observación Aristotélica:</strong> Practicamos la observación empírica y metódica. Cada función, interacción y dato se clasifica y analiza para construir un modelo completo del comportamiento del sistema.</li>
+                <li><strong>Duda Cartesiana:</strong> Adoptamos un enfoque de "confianza cero" para cada componente. Inspirados en el método de la duda de Descartes, no asumimos que nada es seguro, cuestionando incluso las premisas más básicas.</li>
+            </ul>
+
+            <h3>Nuestro Proceso de Investigación</h3>
+            <ul>
+                <li><strong>Fase 1: Deconstrucción y Análisis de Supuestos:</strong> La fase inicial implica una deconstrucción completa del sistema objetivo. Exploramos su arquitectura no solo para ver cómo funciona, sino para entender por qué fue construido de esa manera.</li>
+                <li><strong>Fase 2: Análisis Profundo y Encadenamiento de Exploits:</strong> Una vez que se identifica una falla, comenzamos un análisis profundo que puede abarcar horas, días o semanas. Con resiliencia y tenacidad, exploramos todas las ramificaciones posibles de una vulnerabilidad.</li>
+                <li><strong>Fase 3: Identificación Disciplinada de la Causa Raíz:</strong> La disciplina es la piedra angular de nuestras investigaciones. Nuestro objetivo final es ir más allá de los síntomas e identificar la causa raíz absoluta de la vulnerabilidad.</li>
+            </ul>
+
+            <div class="ascii-button-wrapper">
+                <a href="index.html" class="ascii-button">
+<pre>
+┌──────────────────┐
+│   << GO BACK     │
+└──────────────────┘
+</pre>
+                </a>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
