@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Case Study: GCP Compromise via Android — intended_behavior</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="research.css">
+</head>
+<body>
+
+    <div class="content-section">
+        
+        <h2>[GCP] Persistent Account Compromise via Unauthorized GCP Infrastructure</h2>
+
+        <div class="meta">
+            <p><strong>Credited As:</strong> Develop Aguascalientes</p>
+            <p><strong>Vulnerability Type:</strong> Remote Code Execution (RCE) / Abuse</p>
+            <p><strong>Program:</strong> Google Abuse VRP</p>
+        </div>
+
+        <h3>Executive Summary</h3>
+        <p>
+            This report details a sophisticated, long-term, and persistent compromise of a Google Account, initiated by a trojanized Android application. The attacker used the granted permissions to create multiple unauthorized Google Cloud Projects, leveraging this infrastructure for large-scale malicious operations. The core of the attack lies in its stealth techniques: using APIs to perform actions and then immediately deleting the evidence from standard user interfaces. Critically, the attacker manipulated IAM permissions to lock the legitimate owner out of deleting these unauthorized projects, ensuring their persistence.
+        </p>
+
+        <h3>Key Findings</h3>
+        <ul>
+            <li><strong>Unauthorized GCP Infrastructure:</strong> Five unauthorized Google Cloud Projects were created on the account, with the primary project identified as <code>cedar-nebula-170k4</code>.</li>
+            <li><strong>Large-Scale Malicious Operations:</strong> The GCP dashboard revealed alerts related to high-level computing services, including Virtual Machines (VMs) and GKE workloads, proving large-scale resource abuse.</li>
+            <li><strong>Stealth & Evasion Techniques:</strong> The attacker actively hid their tracks by deleting evidence (e.g., Google Group memberships, Google Tasks) from the UI, creating a direct conflict with the historical data summary in the Google Dashboard.</li>
+            <li><strong>Advanced Persistence & Administrative Lockout:</strong> The "Delete" and "Shut Down" buttons in the Cloud Console were disabled. IAM policies were manipulated to deny the legitimate owner permission to view or manage the projects.</li>
+            <li><strong>Initial Compromise Event:</strong> The earliest evidence of compromise was an outgoing SMS from the Android device containing a <code>DCB_ASSOCIATION</code> string, a behavior consistent with spyware hiding its communications.</li>
+        </ul>
+
+        <h3>Attack Scenario & Impact</h3>
+        <p>
+            The attacker, likely the distributor of a trojanized Android application, tricks a user into granting broad Google Account permissions. This grants the attacker a sophisticated, persistent, and nearly undetectable foothold within the victim's Google ecosystem, allowing for multiple levels of abuse:
+        </p>
+        <ul>
+            <li><strong>Complete Hijacking of Cloud Infrastructure:</strong> The ability to create and control multiple Google Cloud Projects under the user's identity to hijack powerful computing resources for malicious purposes (e.g., crypto mining, botnets).</li>
+            <li><strong>Administrative Lockout & Evasion:</strong> The power to manipulate IAM permissions to lock the legitimate account owner out of administering or deleting the malicious cloud projects, ensuring long-term persistence.</li>
+            <li><strong>Potential for Full Data Exfiltration:</strong> With this level of API access, the attacker could potentially access and exfiltrate all of the user's sensitive data, including emails, contacts, and files.</li>
+        </ul>
+    </div>
+
+    <div style="text-align: center; margin: 40px 0;">
+        <a href="research.html" style="color: var(--saturn-yellow); text-decoration: none; font-family: 'Courier New', monospace; line-height: 1;">
+            <pre>
+┌──────────────────┐
+│   << GO BACK     │
+└──────────────────┘
+            </pre>
+        </a>
+    </div>
+
+</body>
+</html>
