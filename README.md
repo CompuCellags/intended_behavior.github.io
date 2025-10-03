@@ -89,7 +89,3 @@ Abre tu navegador en: http://localhost:8000/index.html
 ║             Security Research & Vulnerability Analyst              ║
 ║         Software developer - Ascii Art - Machine Learning          ║
 ╚════════════════════════════════════════════════════════════════════╝
-```
-## 📁 Estructura del proyecto
-
-   
