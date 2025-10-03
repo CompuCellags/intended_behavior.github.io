@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Case Study: ChromeOS Bypass — intended_behavior</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="research.css">
+</head>
+<body>
+
+    <div class="content-section">
+        
+        <h2>[ChromeOS] Critical Security Policy Bypass via Captive Portal</h2>
+
+        <div class="meta">
+            <p><strong>Credited As:</strong> Develop Aguascalientes</p>
+            <p><strong>Vulnerability Type:</strong> Sandbox Escape</p>
+            <p><strong>Program:</strong> ChromeOS VRP</p>
+        </div>
+
+        <h3>Executive Summary</h3>
+        <p>
+            A critical vulnerability has been identified in ChromeOS that allows for a complete bypass of security policies enforced during the Out-of-Box Experience (OOBE) on non-enrolled, managed devices. By manipulating the Captive Portal Authorization window, an attacker can gain unrestricted internet access, effectively circumventing the forced enrollment process. This bypass is not limited to simple web browsing; it can be escalated to achieve arbitrary command execution via Google Cloud Shell, access to remote development environments, and data exfiltration, thereby nullifying the core security posture of the device in its pre-enrolled state.
+        </p>
+
+        <h3>Test Environment & Configuration</h3>
+        <ul>
+            <li><strong>Product:</strong> Google ChromeOS (Version 16295.74.0 stable)</li>
+            <li><strong>Test Device:</strong> Dell Chromebook 3100 2-in-1</li>
+            <li><strong>Firmware Version:</strong> Google_Fleex.11297.432.0</li>
+            <li><strong>Device State:</strong> Subject to forced enrollment policy, but not yet enrolled. Developer Mode disabled by policy.</li>
+        </ul>
+
+        <h3>Steps to Reproduce</h3>
+        <ol>
+            <li>Begin with a powerwashed (factory reset) Chromebook that is managed by a forced enrollment policy.</li>
+            <li>Connect to a Wi-Fi network. To guarantee the captive portal, configure the network's primary DNS to <code>104.154.51.7</code>.</li>
+            <li>The "Captive Portal Authorization" window will automatically appear.</li>
+            <li>Within the portal window, click the address bar and navigate directly to <code>https://www.google.com</code>. This action breaks the portal's sandbox.</li>
+            <li>Authenticate with a personal Google Account. The session will persist within the captive portal window.</li>
+            <li>Navigate to <code>https://console.cloud.google.com</code>.</li>
+            <li>Click the "Activate Cloud Shell" icon in the top-right corner.</li>
+            <li>A gcloud shell prompt will appear, confirming the ability to execute arbitrary commands.</li>
+        </ol>
+        
+        <h3>Impact Analysis & Scope of Exploitation</h3>
+        <p>
+            Anyone with physical access to a managed Chromebook before it has been enrolled can exploit this vulnerability. The initial bypass serves as a gateway to multiple high-impact exploitation vectors:
+        </p>
+        <ul>
+            <li><strong>Arbitrary Code Execution:</strong> Full access to a gcloud shell allows for the execution of arbitrary system commands and scripts.</li>
+            <li><strong>Enrollment Evasion:</strong> The device can be used indefinitely without being registered, making it invisible to administrators and rendering all organizational policies useless.</li>
+            
+            <li><strong>Remote Development Environment Access:</strong> Join remote VS Code workspaces, including shared bash shells.</li>
+            <li><strong>Local Network Access:</strong> Connect to services on the local network, such as FTP servers, for file system browsing.</li>
+            <li><strong>Data Exfiltration:</strong> Authenticate into third-party services (like ChatGPT) to link cloud storage (Google Drive) and exfiltrate files.</li>
+        </ul>
+
+        <h3>Supporting Evidence</h3>
+        <ul>
+            <li><a href="https://drive.google.com/file/d/1gE3pA8GOfRkhe5is4ceO2SMpfe6ELH3K/view?usp=drive_link" target="_blank"><strong>Video Proof of Concept:</strong> Watch the full attack chain from a powerwashed state to gcloud shell execution.</a></li>
+            <li><a href="https://github.com/CompuCellags/chromebook-bypass-dell3100-studycase" target="_blank"><strong>Detailed Documentation Repository:</strong> Review the complete case study, logs, and notes (private repository).</a></li>
+        </ul>
+
+    </div>
+
+    <div style="text-align: center; margin: 40px 0;">
+        <a href="research.html" style="color: var(--saturn-yellow); text-decoration: none; font-family: 'Courier New', monospace; line-height: 1;">
+            <pre>
+┌──────────────────┐
+│   << GO BACK     │
+└──────────────────┘
+            </pre>
+        </a>
+    </div>
+
+</body>
+</html>
